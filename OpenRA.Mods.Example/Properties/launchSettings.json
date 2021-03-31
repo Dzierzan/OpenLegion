@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Example": {
+      "commandName": "Executable",
+      "executablePath": "../../engine/bin/OpenRA.exe",
+      "commandLineArgs": "Game.Mod=\"example\" Engine.EngineDir=\"..\" Engine.ModSearchPaths=\"../../mods,../mods\""
+    }
+  }
+}
