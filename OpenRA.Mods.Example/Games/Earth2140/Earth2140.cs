@@ -14,7 +14,7 @@ namespace OpenRA.Mods.Example.Games.Earth2140
 
         protected override string FindInstallation()
         {
-            return FindGoGInstallation(1207658738);
+            return FindGoGInstallation(1207658738) ?? FindSteamInstallation(253860);
         }
 
         protected override void UpdateModData(string installPath)

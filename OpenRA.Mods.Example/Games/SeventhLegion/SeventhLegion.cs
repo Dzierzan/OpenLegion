@@ -13,7 +13,7 @@ namespace OpenRA.Mods.Example.Games.SeventhLegion
 
         protected override string FindInstallation()
         {
-            return FindGoGInstallation(1207660773);
+            return FindGoGInstallation(1207660773) ?? FindSteamInstallation(327910);
         }
 
         protected override void UpdateModData(string installPath)

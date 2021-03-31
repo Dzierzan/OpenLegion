@@ -14,7 +14,7 @@ namespace OpenRA.Mods.Example.Games.Kknd
 
         protected override string FindInstallation()
         {
-            return FindGoGInstallation(1207659107);
+            return FindGoGInstallation(1207659107) ?? FindSteamInstallation(1292180);
         }
 
         protected override void UpdateModData(string installPath)

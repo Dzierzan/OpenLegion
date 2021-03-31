@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text.RegularExpressions;
 using Microsoft.Win32;
 using OpenRA.FileSystem;
 using OpenRA.Graphics;
@@ -48,6 +50,86 @@ namespace OpenRA.Mods.Example.Games
         protected void Mount(string file)
         {
             modData.ModFiles.Mount(Id + "|" + Path.GetRelativePath(installPath, file));
+        }
+
+        protected static string FindSteamInstallation(int appIdSteam)
+        {
+            foreach (var steamDirectory in SteamDirectory())
+            {
+                var manifestPath = Path.Combine(steamDirectory, "steamapps", $"appmanifest_{appIdSteam}.acf");
+
+                if (!File.Exists(manifestPath))
+                    continue;
+
+                var data = ParseKeyValuesManifest(manifestPath);
+
+                if (!data.TryGetValue("StateFlags", out var stateFlags) || stateFlags != "4")
+                    continue;
+
+                if (!data.TryGetValue("installdir", out var installDir))
+                    continue;
+
+                return Path.Combine(steamDirectory, "steamapps", "common", installDir);
+            }
+
+            return null;
+        }
+
+        private static IEnumerable<string> SteamDirectory()
+        {
+            var candidatePaths = new List<string>();
+
+            if (Platform.CurrentPlatform == PlatformType.Windows)
+            {
+                var prefixes = new[] { "HKEY_LOCAL_MACHINE\\Software\\", "HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\" };
+
+                foreach (var prefix in prefixes)
+                    if (Registry.GetValue($"{prefix}Valve\\Steam", "InstallPath", null) is string path)
+                        candidatePaths.Add(path);
+            }
+            else if (Platform.CurrentPlatform == PlatformType.OSX)
+                candidatePaths.Add(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Library", "Application Support", "Steam"));
+            else
+                candidatePaths.Add(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), ".steam", "root"));
+
+            foreach (var libraryPath in candidatePaths.Where(Directory.Exists))
+            {
+                yield return libraryPath;
+
+                var libraryFoldersPath = Path.Combine(libraryPath, "steamapps", "libraryfolders.vdf");
+
+                if (!File.Exists(libraryFoldersPath))
+                    continue;
+
+                var data = ParseKeyValuesManifest(libraryFoldersPath);
+
+                for (var i = 1; ; i++)
+                {
+                    if (!data.TryGetValue(i.ToString(), out var path))
+                        break;
+
+                    yield return path;
+                }
+            }
+        }
+
+        private static Dictionary<string, string> ParseKeyValuesManifest(string path)
+        {
+            var regex = new Regex("^\\s*\"(?<key>[^\"]*)\"\\s*\"(?<value>[^\"]*)\"\\s*$");
+            var result = new Dictionary<string, string>();
+
+            using (var s = new FileStream(path, FileMode.Open))
+            {
+                foreach (var line in s.ReadAllLines())
+                {
+                    var match = regex.Match(line);
+
+                    if (match.Success)
+                        result[match.Groups["key"].Value] = match.Groups["value"].Value;
+                }
+            }
+
+            return result;
         }
 
         protected static string FindGoGInstallation(int appIdGog)
