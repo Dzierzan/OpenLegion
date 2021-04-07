@@ -23,6 +23,7 @@ namespace OpenRA.Mods.Example.Games.SeventhLegion.FileFormats
             }
 
             var firstFrame = firstValue;
+            s.Position -= 4;
 
             var frames = new List<int[]>();
 
