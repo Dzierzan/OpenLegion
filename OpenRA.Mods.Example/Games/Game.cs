@@ -7,6 +7,8 @@ using System.Text.RegularExpressions;
 using Microsoft.Win32;
 using OpenRA.FileSystem;
 using OpenRA.Graphics;
+using OpenRA.Primitives;
+using OpenRA.Traits;
 
 namespace OpenRA.Mods.Example.Games
 {
@@ -49,7 +51,18 @@ namespace OpenRA.Mods.Example.Games
 
         protected void Mount(string file)
         {
-            modData.ModFiles.Mount(Id + "|" + Path.GetRelativePath(installPath, file));
+            Mount(file, out _);
+        }
+
+        protected IReadOnlyPackage Mount(string file, out string path)
+        {
+            path = Path.GetRelativePath(installPath, file);
+            modData.ModFiles.Mount(Id + "|" + path, path);
+
+            var field = modData.ModFiles.GetType().GetField("explicitMounts", BindingFlags.NonPublic | BindingFlags.Instance);
+            var dict = (Dictionary<string, IReadOnlyPackage>)field.GetValue(modData.ModFiles);
+
+            return dict[path];
         }
 
         protected static string FindSteamInstallation(int appIdSteam)
@@ -214,6 +227,30 @@ namespace OpenRA.Mods.Example.Games
                 else if (value.All(extension => extension != newEntry[0]))
                     field.SetValue(scope, value.Concat(newEntry).ToArray());
             }
+        }
+
+        private readonly List<Func<TraitInfo>> palettes = new List<Func<TraitInfo>>();
+
+        protected void RegisterPalette(Func<TraitInfo> paletteCreator)
+        {
+            palettes.Add(paletteCreator);
+        }
+
+        public void CreateRules()
+        {
+            var world = modData.DefaultRules.Actors["world"];
+            var field = world.GetType().GetField("traits", BindingFlags.NonPublic | BindingFlags.Instance);
+
+            if (field == null)
+                return;
+
+            var traits = (TypeDictionary)field.GetValue(world);
+
+            if (traits == null)
+                return;
+
+            foreach (var paletteCreator in palettes)
+                traits.Add(paletteCreator());
         }
     }
 }

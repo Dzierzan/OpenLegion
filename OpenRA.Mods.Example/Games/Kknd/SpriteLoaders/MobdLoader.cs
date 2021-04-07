@@ -39,12 +39,10 @@ namespace OpenRA.Mods.Example.Games.Kknd.SpriteLoaders
 			{
 				var width = mobdFrame.RenderFlags.Image.Width;
 				var height = mobdFrame.RenderFlags.Image.Height;
-				var x = mobdFrame.OffsetX;
-				var y = mobdFrame.OffsetY;
 
 				Size = new Size(width, height);
 				FrameSize = new Size(width, height);
-				Offset = new int2((int)(width / 2 - x), (int)(height / 2 - y));
+				Offset = new int2(width / 2 - mobdFrame.OffsetX, height / 2 - mobdFrame.OffsetY);
 				Data = mobdFrame.RenderFlags.Image.Pixels;
 				Palette = mobdFrame.RenderFlags.Palette;
 				Points = mobdFrame.Points;

@@ -20,7 +20,7 @@ namespace OpenRA.Mods.Example.Games.Earth2140.SpriteLoaders
             Type = frame.Is32bpp ? SpriteFrameType.Rgba32 : SpriteFrameType.Indexed8;
             Size = new Size(frame.Width, frame.Height);
             FrameSize = new Size(frame.Width, frame.Height);
-            Offset = new int2(frame.Width / 2, frame.Height / 2);
+            Offset = new int2(0, 0);
             Data = frame.Pixels;
         }
     }
@@ -40,8 +40,17 @@ namespace OpenRA.Mods.Example.Games.Earth2140.SpriteLoaders
                 return false;
             }
 
+            var mix = new Mix(s);
+
+            if (mix.Frames.Length == 0)
+            {
+                metadata = null;
+                frames = null;
+                return false;
+            }
+
             metadata = null;
-            frames = new Mix(s).Frames.Select(frame => new MixSpriteFrame(frame)).ToArray();
+            frames = mix.Frames.Select(frame => new MixSpriteFrame(frame)).ToArray();
 
             return true;
         }

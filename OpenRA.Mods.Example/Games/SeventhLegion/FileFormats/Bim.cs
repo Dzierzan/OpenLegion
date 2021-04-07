@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -65,14 +64,7 @@ namespace OpenRA.Mods.Example.Games.SeventhLegion.FileFormats
                     return null;
                 }
 
-                try
-                {
-                    return new BimFrame(new SegmentStream(s, e[0], e[1]));
-                }
-                catch (Exception)
-                {
-                    return null;
-                }
+                return new BimFrame(new SegmentStream(s, e[0], e[1]));
             }).Where(e => e != null).ToArray();
         }
     }

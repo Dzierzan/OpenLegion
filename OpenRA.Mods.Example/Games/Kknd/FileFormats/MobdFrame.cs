@@ -18,15 +18,15 @@ namespace OpenRA.Mods.Example.Games.Kknd.FileFormats
 {
 	public class MobdFrame
 	{
-		public readonly uint OffsetX;
-		public readonly uint OffsetY;
+		public readonly int OffsetX;
+		public readonly int OffsetY;
 		public readonly MobdRenderFlags RenderFlags;
 		public readonly MobdPoint[] Points;
 
 		public MobdFrame(SegmentStream stream)
 		{
-			OffsetX = stream.ReadUInt32();
-			OffsetY = stream.ReadUInt32();
+			OffsetX = stream.ReadInt32();
+			OffsetY = stream.ReadInt32();
 			stream.ReadUInt32(); // Unk
 			var renderFlagsOffset = stream.ReadUInt32();
 			stream.ReadUInt32(); // boxListOffset - we do not read boxes (2 points, min and max)

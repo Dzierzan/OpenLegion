@@ -21,7 +21,7 @@ namespace OpenRA.Mods.Example.Games.WarWind.SpriteLoaders
             Type = SpriteFrameType.Indexed8;
             Size = new Size(frame.Width, frame.Height);
             FrameSize = new Size(frame.Width, frame.Height);
-            Offset = new int2(frame.Width / 2, frame.Height / 2);
+            Offset = new int2(frame.Width / 2 + frame.OffsetX, frame.Height / 2 + frame.OffsetY);
             Data = frame.Pixels;
         }
     }
@@ -37,8 +37,17 @@ namespace OpenRA.Mods.Example.Games.WarWind.SpriteLoaders
                 return false;
             }
 
+            var d3gr = new D3gr(s);
+
+            if (d3gr.Frames.Length == 0)
+            {
+                metadata = null;
+                frames = null;
+                return false;
+            }
+
             metadata = null;
-            frames = new D3gr(s).Frames.Select(frame => new D3grSpriteFrame(frame)).ToArray();
+            frames = d3gr.Frames.Select(frame => new D3grSpriteFrame(frame)).ToArray();
 
             return true;
         }

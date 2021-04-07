@@ -38,13 +38,7 @@ namespace OpenRA.Mods.Example.Games.WarWind.FileFormats
 
                 // .000 File contains strings.. except second last file, which is something else.
                 if (test == 0x52473344)
-                {
-                    stream.Position += 4;
-
-                    // TODO otherwise: palette!
-                    if (stream.ReadInt32() > 0)
-                        index.Add($"{i}.D3GR", new ResEntry { Offset = offset, Length = length });
-                }
+                    index.Add($"{i}.D3GR", new ResEntry { Offset = offset, Length = length });
                 else if (test == 0x46464952)
                     index.Add($"{i}.WAV", new ResEntry { Offset = offset, Length = length });
             }
