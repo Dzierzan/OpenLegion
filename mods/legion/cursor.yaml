@@ -1,4 +1,4 @@
 Cursors:
-	bits/cursor.png: cursor
+	GFX|PTRSELE.BIM: cursor
 		default:
 			Start: 0
