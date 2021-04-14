@@ -1,9 +1,18 @@
 Speech:
 	DefaultVariant: .wav
 	Notifications:
+		UnitReady:
+		Building:
+		CancelledAudio:
 		StartGame:
+		GameLoaded:
+		GameSaved:
+		BaseAttack:
 
 Sounds:
 	DefaultVariant: .wav
 	Notifications:
+		ChatLine:
 		ClickSound:
+		Beacon:
+		TabClick:
