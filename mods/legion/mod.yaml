@@ -23,7 +23,7 @@ Sequences:
 	legion|sequences/mpspawn.yaml
 
 TileSets:
-	legion|tilesets/example.yaml
+	legion|tilesets/desert.yaml
 
 Cursors:
 	legion|cursor.yaml
