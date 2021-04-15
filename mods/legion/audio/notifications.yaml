@@ -1,5 +1,5 @@
 Speech:
-	DefaultVariant: .wav
+	DefaultVariant:
 	Notifications:
 		UnitReady:
 		Building:
@@ -10,10 +10,10 @@ Speech:
 		BaseAttack:
 
 Sounds:
-	DefaultVariant: .wav
+	DefaultVariant:
 	Notifications:
-		ChatLine:
-		ClickSound:
+		ChatLine: click.wav
+		ClickSound: click.wav
 		Beacon:
 		TabClick:
 		ClickDisabledSound:

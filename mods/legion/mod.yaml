@@ -6,6 +6,7 @@ Packages:
 	^EngineDir
 	$legion: legion
 	^EngineDir|mods/common: common
+	legion|bits/sounds
 
 MapFolders:
 	legion|maps: System
@@ -96,8 +97,16 @@ ChromeLayout:
 	common|chrome/musicplayer.yaml
 	common|chrome/playerprofile.yaml
 	common|chrome/replaybrowser.yaml
-	legion|chrome/settings.yaml
+	common|chrome/settings.yaml
+	common|chrome/settings-advanced.yaml
+	common|chrome/settings-audio.yaml
+	common|chrome/settings-display.yaml
+	common|chrome/settings-hotkeys.yaml
+	common|chrome/settings-input.yaml
 	common|chrome/tooltips.yaml
+
+Voices:
+	legion|audio/voices.yaml
 
 Notifications:
 	legion|audio/notifications.yaml
@@ -155,6 +164,8 @@ Fonts:
 MapGrid:
 	TileSize: 32, 32
 	Type: Rectangular
+
+SoundFormats: Wav
 
 SpriteFormats: PngSheet
 

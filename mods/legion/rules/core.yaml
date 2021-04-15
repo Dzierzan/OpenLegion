@@ -72,6 +72,9 @@
 	# Show control group numbers when selected.
 	WithTextControlGroupDecoration:
 		Position: BottomRight
+	# Default voice
+	Voiced:
+		VoiceSet: UnitVoice
 
 # Base for all buildings, towers and walls.
 ^CoreConstruction:

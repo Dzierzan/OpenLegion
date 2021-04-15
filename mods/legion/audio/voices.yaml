@@ -1,0 +1,6 @@
+UnitVoice:
+	DefaultVariant:
+	Voices:
+		Select: SFX|Proc.wav, SFX|Ur.wav, SFX|Ur2.wav
+		Action: SFX|Moveitou.wav, SFX|Onmyway.wav
+		Attack: SFX|Ptete.wav
