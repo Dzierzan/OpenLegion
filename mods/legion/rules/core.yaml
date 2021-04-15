@@ -1,0 +1,271 @@
+# Base for anything.
+^CoreVisibleActor:
+	# Required to render anything.
+	RenderSprites:
+	# At default we never see anything under shroud or fog.
+	HiddenUnderFog:
+	# Calculates facings.
+	BodyOrientation:
+	# Derive facings from sprite body sequence.
+	QuantizeFacingsFromSequence:
+	# Required to see debug overlays.
+	CombatDebugOverlay:
+	# Renders target lines between order waypoints.
+	DrawLineToTarget:
+
+# Map decoration actors.
+^CoreDecoration:
+	Inherits: ^CoreVisibleActor
+	# Always visible, no special shroud logic here.
+	-HiddenUnderFog:
+	FrozenUnderFog:
+	# Decorations have sprites but do not use facing for them.
+	WithSpriteBody:
+	# Default setting makes decorations take 1x1 tiles.
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+	# Put decorations in own catgegory in map editor.
+	MapEditorData:
+		Categories: Decorations
+	# Enforce neutral ownership.
+	RequiresSpecificOwners:
+		ValidOwnerNames: Neutral
+
+# Base for all movable units.
+^CoreUnit:
+	Inherits: ^CoreVisibleActor
+	# Required to trigger VoiceAnnouncement only after producing.
+	ExternalCondition@PRODUCED:
+		Condition: produced
+	# Any build unit should report with a sound.
+	VoiceAnnouncement:
+		RequiresCondition: produced
+		Voice: Create
+		ValidRelationships: Neutral
+	# Default set which fits for most units: Occupy exactly 1 cell / 32x32 pixel tile.
+	HitShape:
+		Type: Circle
+			Radius: 512
+	# In general all units can be selected by using its full cell / tile.
+	Selectable:
+		Bounds: 32, 32
+		# Make the default priority higher, so units are prefered over constructions.
+		Priority: 20
+	# Enemy units must be destroyed to win a game.
+	MustBeDestroyed:
+	# Units sequences should always use facings.
+	WithFacingSpriteBody:
+	# Units are visible on the radar.
+	AppearsOnRadar:
+	# Allow units to use the AttackMove and AssaultMove commands.
+	AttackMove:
+	# Use their center position instead of their footprint for fog hiding logic.
+	HiddenUnderFog:
+		Type: CenterPosition
+	# Units should die when owner lost the game.
+	OwnerLostAction:
+		Action: Kill
+	# Make unit notify being attacked.
+	#AttackNotification: todo
+	#	Notifications:
+	# Show control group numbers when selected.
+	WithTextControlGroupDecoration:
+		Position: BottomRight
+
+# Base for all buildings, towers and walls.
+^CoreConstruction:
+	Inherits: ^CoreVisibleActor
+	# Last seen state of a building will be rendered under fog, instead of using the default hiding behavior.
+	-HiddenUnderFog:
+	FrozenUnderFog:
+	# Applying "building"-damage to all actors based on this.
+	Armor:
+		Type: building
+	# Add building specific logic to Constructions.
+	Building:
+	# Constructions can be targeted by anything which attacks ground.
+	Targetable:
+		TargetTypes: Ground
+	# In general all constructions can be selected.
+	Selectable:
+	# Constructions have sprites but do not use facing for them.
+	WithSpriteBody:
+	# Implement construction logic.
+	# Constructions are visible on the radar.
+	AppearsOnRadar:
+	# Constructions should explode when owner lost the game.
+	OwnerLostAction:
+		Action: Kill
+	# Show preview on placement.
+	ActorPreviewPlaceBuildingPreview:
+	# Health bar.
+	SelectionDecorations:
+
+# Base for all buildings.
+^CoreBuilding:
+	Inherits: ^CoreConstruction
+	# Require other actor nearby which provides buildable area in order to place a building.
+	RequiresBuildableArea:
+		AreaTypes: building
+		Adjacent: 4
+	# Grants buildable area for other buildings and defence structures.
+	GivesBuildableArea:
+		AreaTypes: building, defence
+	# Enemy buildings have to be destroyed to win, even when short game option is used.
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	# If a building is destroyed, it should play an animation...
+	#Explodes: TODO
+	# ... and Shake the screen.
+	ShakeOnDeath:
+		Intensity: 10
+	# The view radius of buildings.
+	RevealsShroud:
+		Range: 5c0
+	# Group all buildings in the map editor.
+	MapEditorData:
+		Categories: Building
+	# Should not be auto attacked.
+	Targetable@NoAutoAttack:
+		TargetTypes: NoAutoAttack
+	# Make unit notify being attacked.
+	AttackNotification:
+		Notifications:
+	# Notify when building lost.
+	ActorLostNotification:
+		Notification:
+	# Target "Structure" target for ai bombers.
+	Targetable:
+		TargetTypes: Ground, Structure
+
+# Base for all towers.
+^CoreTower:
+	Inherits@1: ^CoreConstruction
+	Inherits@2: ^CoreTurret
+	# Group all towers in the map editor.
+	MapEditorData:
+		Categories: Tower
+	# Towers are always 2x2 in size.
+	Building:
+		Dimensions: 2,2
+		Footprint: xx==
+	# Correct Hitshape and selection box for all towers
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1024
+			BottomRight: 1024, 0
+		TargetableOffsets: 819,-512,0, 819,512,0
+	Selectable:
+		Bounds: 64, 64, 0, -16
+	# Require other actor nearby which provides buildable area in order to place a tower.
+	RequiresBuildableArea:
+		AreaTypes: defence
+		Adjacent: 4
+	# Towers will show an explosion upon being destroyed.
+	#Explodes: TODO
+	AttackTurreted:
+	# Towers also have to be destroyed when short game option is used.
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	# Render the tower a little bit when destroyed.
+	# Default looking south
+	Turreted:
+		InitialFacing: 512
+		RealignDelay: -1
+
+# Base for all infantry.
+^CoreInfantry:
+	Inherits: ^CoreUnit
+	# Applying "infantry"-damage to all actors based on this.
+	Armor:
+		Type: infantry
+	# Vehicles can kill infantry by driving over them.
+	Crushable:
+		CrushClasses: infantry
+		WarnProbability: 0
+	# Allow 5 infantry units to share a cell and set movement modifiers.
+	Mobile:
+		Locomotor: unit
+	# Actor can be targeted by anything which attacks ground.
+	Targetable:
+		TargetTypes: Ground, Infantry
+	# Calculated size for infantry to match shared cells.
+	Selectable:
+		Bounds: 24,24
+	# Infantry hitshape
+	HitShape:
+		Type: Circle
+			Radius: 128
+	# Infantry has an animation while moving: walking.
+	WithMoveAnimation:
+	# Group all infantry in the map editor.
+	MapEditorData:
+		Categories: Infantry
+	# Make infantry act like they live.
+	DeathSounds:
+	# Infantry has infantry body trait
+	WithInfantryBody:
+		MoveSequence: move
+		DefaultAttackSequence: shoot
+		AttackSequences: shoot
+		StandSequences: idle
+	# Facing tolerance for frontal attack.
+	AttackFrontal:
+		FacingTolerance: 5
+	# This trait needs to be removed as it won't work with WithInfantryBody
+	-WithFacingSpriteBody:
+	# This actor will reveal the shroud
+	RevealsShroud:
+		Range: 10c0
+	# Random idle turning
+	TurnOnIdle:
+		MinDelay: 100
+		MaxDelay: 500
+	# Autotargetting actors
+	AutoTarget:
+	AutoTargetPriority:
+		InvalidTargets: Structure
+
+# Base for all vehicles
+^CoreVehicle:
+	Inherits: ^CoreUnit
+	Armor:
+		Type: vehicle
+	# Vehicles can kill infantry by moving over them and set movement modifiers.
+	Mobile:
+		Locomotor: unit
+	# Actor can be targeted by anything which attacks ground.
+	Targetable:
+		TargetTypes: Ground
+	# Vehicles have an animation while moving.
+	WithMoveAnimation:
+	# Destroying a vehicle always causes an explosion.
+	#Explodes: todo
+	#	Weapon: dieVehicle
+	#	EmptyWeapon: dieVehicle
+	# Group all vehicles in the map editor.
+	MapEditorData:
+		Categories: Vehicle
+	# Autotargetting actors
+	AutoTarget:
+	AutoTargetPriority:
+		InvalidTargets: Structure
+
+^CoreWorld:
+	Locomotor@Unit:
+		Name: unit
+		TerrainSpeeds:
+			Clear: 100
+
+# Grouped traits for standard turret behavior.
+^CoreTurret:
+	# General turret behavior.
+	Turreted:
+	# If it has a turret, it should attack with its turret only, meaning it can aim and fire with it while moving.
+	AttackTurreted:
+		Voice:
+	# Auto target enemies nearby.
+	AutoTarget:
+	AutoTargetPriority:
+		InvalidTargets: Structure

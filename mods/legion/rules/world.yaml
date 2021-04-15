@@ -1,4 +1,4 @@
-^baseworld:
+^CoreWorld:
 	Inherits: ^palettes
 	AlwaysVisible:
 	ActorMap:
@@ -18,11 +18,11 @@
 	StartingUnits@Example:
 		Class: none
 		ClassName: Example
-		BaseActor: dummyactor
+		BaseActor: mobilebase
 		Factions: Example
 
 world:
-	Inherits: ^baseworld
+	Inherits: ^CoreWorld
 	SpawnMapActors:
 	SpawnStartingUnits:
 	MapStartingLocations:
@@ -30,9 +30,10 @@ world:
 	DebugVisualizations:
 	TerrainGeometryOverlay:
 	CustomTerrainDebugOverlay:
+	PathFinder:
 
 editorworld:
-	Inherits: ^baseworld
+	Inherits: ^CoreWorld
 	EditorActorLayer:
 	EditorActionManager:
 	EditorCursorLayer:

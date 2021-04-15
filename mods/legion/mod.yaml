@@ -16,11 +16,32 @@ Rules:
 	legion|rules/palettes.yaml
 	legion|rules/player.yaml
 	legion|rules/world.yaml
+	legion|rules/core.yaml
+	legion|rules/7thlegion_buildings.yaml
+	legion|rules/7thlegion_infantry.yaml
+	legion|rules/7thlegion_vehicles.yaml
+	legion|rules/thechosen_buildings.yaml
+	legion|rules/thechosen_infantry.yaml
+	legion|rules/thechosen_vehicles.yaml
 
 Sequences:
 	legion|sequences/dummyactor.yaml
 	legion|sequences/editor-overlay.yaml
 	legion|sequences/mpspawn.yaml
+	legion|sequences/7thlegion_buildings.yaml
+	legion|sequences/7thlegion_infantry.yaml
+	legion|sequences/7thlegion_vehicles.yaml
+	legion|sequences/thechosen_buildings.yaml
+	legion|sequences/thechosen_infantry.yaml
+	legion|sequences/thechosen_vehicles.yaml
+
+Weapons:
+	legion|sequences/7thlegion_buildings.yaml
+	legion|sequences/7thlegion_infantry.yaml
+	legion|sequences/7thlegion_vehicles.yaml
+	legion|sequences/thechosen_buildings.yaml
+	legion|sequences/thechosen_infantry.yaml
+	legion|sequences/thechosen_vehicles.yaml
 
 TileSets:
 	legion|tilesets/desert.yaml

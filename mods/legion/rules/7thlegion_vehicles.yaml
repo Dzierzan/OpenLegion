@@ -1,0 +1,13 @@
+mobilebase:
+	Inherits@1: ^CoreVehicle
+	Tooltip:
+		Name: Mobile Base
+	Health:
+		HP: 5000
+	Mobile:
+		TurnSpeed: 80
+		Speed: 120
+	-AutoTarget:
+	-AutoTargetPriority:
+	RenderSprites:
+		PlayerPalette: 7thlegion

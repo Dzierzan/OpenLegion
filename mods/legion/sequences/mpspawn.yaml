@@ -1,2 +1,8 @@
 mpspawn:
 	idle: bits/mpspawn.png
+
+moveflsh:
+	idle: bits/click.png
+		Length: 5
+		Tick: 80
+		ZOffset: 2047

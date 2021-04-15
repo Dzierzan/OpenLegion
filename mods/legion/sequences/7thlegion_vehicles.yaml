@@ -1,0 +1,5 @@
+mobilebase:
+	idle: GFX|MOBBASE.BIM
+		Facings: -32
+	move: GFX|MOBBASE.BIM
+		Facings: -32

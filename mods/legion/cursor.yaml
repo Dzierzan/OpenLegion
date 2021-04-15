@@ -1,4 +1,152 @@
 Cursors:
 	GFX|PTRSELE.BIM: cursor
+		ingame-default:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		ingame-select:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
 		default:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		select:
+			Start: 0
+
+	GFX|PTRATTA.BIM: cursor
+		attack:
+			Start: 0
+			Length: 15
+	GFX|PTRATTA.BIM: cursor
+		attackoutsiderange:
+			Start: 0
+			Length: 15
+	GFX|PTRATTA.BIM: cursor
+		attackmove:
+			Start: 0
+			Length: 15
+	GFX|PTRATTA.BIM: cursor
+		attackmove-blocked:
+			Start: 0
+			Length: 15
+	GFX|PTRATTA.BIM: cursor
+		assaultmove:
+			Start: 0
+			Length: 15
+	GFX|PTRATTA.BIM: cursor
+		assaultmove-blocked:
+			Start: 0
+			Length: 15
+	GFX|PTRATTA.BIM: cursor
+		attack-minimap:
+			Start: 0
+			Length: 15
+	GFX|PTRATTA.BIM: cursor
+		attackoutsiderange-minimap:
+			Start: 0
+			Length: 15
+
+	GFX|PTRMOVE.BIM: cursor
+		move:
+			Start: 0
+			Length: 15
+	GFX|PTRMOVE.BIM: cursor
+		move-minimap:
+			Start: 0
+			Length: 15
+	GFX|PTRMOVE.BIM: cursor
+		move-blocked:
+			Start: 0
+			Length: 15
+
+	GFX|PTRSELE.BIM: cursor
+		scroll-t:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-tr:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-r:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-br:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-b:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-bl:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-l:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-tl:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-t-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-tr-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-r-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-br-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-b-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-bl-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-l-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		scroll-tl-blocked:
+			Start: 0
+
+	GFX|PTRSELE.BIM: cursor
+		guard:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		guard-minimap:
+			Start: 0
+
+	GFX|BLESS.BIM: cursor
+		ability:
+			Start: 0
+			Length: 6
+	GFX|BLESS.BIM: cursor
+		ability-minimap:
+			Start: 0
+			Length: 6
+
+	GFX|PTRSELE.BIM: cursor
+		joystick-all:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		joystick-t-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		joystick-tr-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		joystick-r-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		joystick-br-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		joystick-b-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		joystick-bl-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		joystick-l-blocked:
+			Start: 0
+	GFX|PTRSELE.BIM: cursor
+		joystick-tl-blocked:
 			Start: 0
