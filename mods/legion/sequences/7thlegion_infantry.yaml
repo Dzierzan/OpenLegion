@@ -16,3 +16,5 @@
 		Length: 15
 		Facings: -8
 		Tick: 60
+	icon: GFX|ICONST.BIM
+		Start: 8

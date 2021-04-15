@@ -1,0 +1,41 @@
+projectiles:
+	lazer_A: GFX|FIRE1.BIM
+		Frames: 20,21,22,23,24,25,26,27,28,29,30,31,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
+		Facings: -32
+		ZOffset: 4900
+	lazer_B: GFX|FIRE1.BIM
+		Frames: 28,29,30,31,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27
+		Facings: -32
+		ZOffset: 4900	
+	shell: GFX|SHELL1.BIM
+		Frames: 13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,0,1,2,3,4,5,6,7,8,9,10,11,12
+		Facings: -32
+		ZOffset: 4900
+	rocket: GFX|ROCKET.BIM
+		Frames: 8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,0,1,2,3,4,5,6,7
+		Facings: -32
+		ZOffset: 4900
+	small_rocket: GFX|MMMISS.BIM
+		Frames: 11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,0,1,2,3,4,5,6,7,8,9,10
+		Facings: -32
+		ZOffset: 4900
+	blue_lazer: GFX|LAZER1.BIM
+		Frames: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+		Facings: -32
+		ZOffset: 4900
+	red_lazer: GFX|LAZER1.BIM
+		Frames: 40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55
+		Facings: -32
+		ZOffset: 4900
+
+smoke_trail_A:
+	idle: GFX|TRAIL.BIM
+		ZOffset: 4800
+		Length: 11
+		Tick: 40
+
+smoke_trail_B:
+	idle: GFX|TRAIL2.BIM
+		ZOffset: 4800
+		Length: 11
+		Tick: 40

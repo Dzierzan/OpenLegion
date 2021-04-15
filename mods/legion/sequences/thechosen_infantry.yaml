@@ -16,3 +16,5 @@ thechosen_machine_gunner:
     Length: 15
     Facings: -8
     Tick: 60
+  icon: GFX|ICONST1.BIM
+    Start: 8

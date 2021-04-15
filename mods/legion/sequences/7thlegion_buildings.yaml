@@ -6,6 +6,8 @@
 	shadow-overlay: bits/7thLegion_Base.png
 		Start: 2
 		ZOffset: 1768
+	icon: GFX|ICONSB.BIM
+		Start: 1
 
 7thlegion_barracks: 
 	idle: bits/7thLegion_Barracks.png
@@ -18,6 +20,8 @@
 	damaged-shadow-overlay: bits/7thLegion_Barracks.png
 		Start: 3
 		ZOffset: 1768
+	icon: GFX|ICONSB.BIM
+		Start: 11
 
 7thlegion_power_plant: 
 	idle: bits/7thLegion_PowerPlant.png
@@ -27,6 +31,8 @@
 	shadow-overlay: bits/7thLegion_PowerPlant.png
 		Start: 2
 		ZOffset: 1768
+	icon: GFX|ICONSB.BIM
+		Start: 3
 
 7thlegion_refinery:
 	idle: bits/7thLegion_Refinery.png
@@ -34,6 +40,8 @@
 	shadow-overlay: bits/7thLegion_Refinery.png
 		Start: 1
 		ZOffset: 1768
+	icon: GFX|ICONSB.BIM
+		Start: 2
 
 7thlegion_hospital: 
 	idle: bits/7thLegion_Hospital.png
@@ -46,6 +54,8 @@
 	damaged-shadow-overlay: bits/7thLegion_Barracks.png
 		Start: 3
 		ZOffset: 1768
+	icon: GFX|ICONSB.BIM
+		Start: 12
 
 7thlegion_vehicle_factory: 
 	idle: bits/7thLegion_TankFactory.png
@@ -55,6 +65,8 @@
 	shadow-overlay: bits/7thLegion_TankFactory.png
 		Start: 2
 		ZOffset: 1768
+	icon: GFX|ICONSB.BIM
+		Start: 0
 
 7thlegion_robot_hangar: 
 	idle: bits/7thLegion_MechFactory.png
@@ -64,6 +76,8 @@
 	shadow-overlay: bits/7thLegion_MechFactory.png
 		Start: 2
 		ZOffset: 1768
+	icon: GFX|ICONSB.BIM
+		Start: 13
 
 7thlegion_hi_tech_lab: 
 	idle: bits/7thLegion_TechCenter.png
@@ -73,6 +87,8 @@
 	shadow-overlay: bits/7thLegion_TechCenter.png
 		Start: 2
 		ZOffset: 1768
+	icon: GFX|ICONSB.BIM
+		Start: 9
 
 7thlegion_repair_bay:
 	idle: bits/7thLegion_RepairPad.png
@@ -82,10 +98,14 @@
 	shadow-overlay: bits/7thLegion_RepairPad.png
 		Start: 2
 		ZOffset: 1768	
+	icon: GFX|ICONSB.BIM
+		Start: 10
 
 7thlegion_gun_emplacement:
 	idle: bits/7thLegion_GunEmplacement.png
 		Start: 0 
+	icon: GFX|ICONSB.BIM
+		Start: 7
 
 7thlegion_super_gun_emplacement:
 	idle: bits/7thLegion_SuperGunEmplacement.png
@@ -93,3 +113,5 @@
 	shadow-overlay: bits/7thLegion_SuperGunEmplacement.png
 		Start: 1
 		ZOffset: 1768	
+	icon: GFX|ICONSB.BIM
+		Start: 8

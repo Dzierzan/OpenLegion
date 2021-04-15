@@ -1,0 +1,25 @@
+explosions:
+	small_explosion: GFX|BANG2.BIM
+		Length: 4
+		Tick: 60
+		ZOffset: 5000
+	big_explosion: GFX|BANG1.BIM
+		Length: 14
+		Tick: 60
+		ZOffset: 5000
+	explosion_A: GFX|EXPL64.BIM
+		Length: 75
+		Tick: 60
+		ZOffset: 5000
+	explosion_B: GFX|EXPLA.BIM
+		Length: 78
+		Tick: 60
+		ZOffset: 5000
+	explosion_C: GFX|EXPLB.BIM
+		Length: 75
+		Tick: 60
+		ZOffset: 5000
+	explosion_D: GFX|EXPLC.BIM
+		Length: 61
+		Tick: 60
+		ZOffset: 5000
