@@ -7,6 +7,7 @@ Packages:
 	$legion: legion
 	^EngineDir|mods/common: common
 	legion|bits/sounds
+	legion|uibits
 
 MapFolders:
 	legion|maps: System

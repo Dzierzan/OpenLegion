@@ -1,11 +1,11 @@
 ^Dialog:
-	Image: bits/dialog.png
+	Image: uibits/dialog.png
 
 ^Glyphs:
-	Image: bits/glyphs.png
+	Image: uibits/glyphs.png
 
 ^LoadScreen:
-	Image: bits/loadscreen.png
+	Image: uibits/loadscreen.png
 
 observer-scrollpanel-button:
 	Inherits: ^Dialog
@@ -268,7 +268,7 @@ scrollitem-nohover:
 logos:
 	Inherits: ^LoadScreen
 	Regions:
-		logo: 0, 0, 256, 256
+		logo: 0,0,591,249
 
 loadscreen-stripe:
 	Inherits: ^LoadScreen
