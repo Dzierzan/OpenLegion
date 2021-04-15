@@ -96,7 +96,7 @@ ChromeLayout:
 	common|chrome/musicplayer.yaml
 	common|chrome/playerprofile.yaml
 	common|chrome/replaybrowser.yaml
-	common|chrome/settings.yaml
+	legion|chrome/settings.yaml
 	common|chrome/settings-advanced.yaml
 	common|chrome/settings-audio.yaml
 	common|chrome/settings-display.yaml
