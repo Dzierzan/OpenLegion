@@ -1,0 +1,95 @@
+7thlegion_base: 
+	idle: bits/7thLegion_Base.png
+		Start: 0
+	damaged-idle: bits/7thLegion_Base.png
+		Start: 1
+	shadow-overlay: bits/7thLegion_Base.png
+		Start: 2
+		ZOffset: 1768
+
+7thlegion_barracks: 
+	idle: bits/7thLegion_Barracks.png
+		Start: 0
+	damaged-idle: bits/7thLegion_Barracks.png
+		Start: 1
+	shadow-overlay: bits/7thLegion_Barracks.png
+		Start: 2
+		ZOffset: 1768
+	damaged-shadow-overlay: bits/7thLegion_Barracks.png
+		Start: 3
+		ZOffset: 1768
+
+7thlegion_power_plant: 
+	idle: bits/7thLegion_PowerPlant.png
+		Start: 0
+	damaged-idle: bits/7thLegion_PowerPlant.png
+		Start: 1
+	shadow-overlay: bits/7thLegion_PowerPlant.png
+		Start: 2
+		ZOffset: 1768
+
+7thlegion_refinery:
+	idle: bits/7thLegion_Refinery.png
+		Start: 0
+	shadow-overlay: bits/7thLegion_Refinery.png
+		Start: 1
+		ZOffset: 1768
+
+7thlegion_hospital: 
+	idle: bits/7thLegion_Hospital.png
+		Start: 0
+	damaged-idle: bits/7thLegion_Hospital.png
+		Start: 1
+	shadow-overlay: bits/7thLegion_Hospital.png
+		Start: 2
+		ZOffset: 1768
+	damaged-shadow-overlay: bits/7thLegion_Barracks.png
+		Start: 3
+		ZOffset: 1768
+
+7thlegion_vehicle_factory: 
+	idle: bits/7thLegion_TankFactory.png
+		Start: 0
+	damaged-idle: bits/7thLegion_TankFactory.png
+		Start: 1
+	shadow-overlay: bits/7thLegion_TankFactory.png
+		Start: 2
+		ZOffset: 1768
+
+7thlegion_robot_hangar: 
+	idle: bits/7thLegion_MechFactory.png
+		Start: 0
+	damaged-idle: bits/7thLegion_MechFactory.png
+		Start: 1
+	shadow-overlay: bits/7thLegion_MechFactory.png
+		Start: 2
+		ZOffset: 1768
+
+7thlegion_hi_tech_lab: 
+	idle: bits/7thLegion_TechCenter.png
+		Start: 0
+	damaged-idle: bits/7thLegion_TechCenter.png
+		Start: 1
+	shadow-overlay: bits/7thLegion_TechCenter.png
+		Start: 2
+		ZOffset: 1768
+
+7thlegion_repair_bay:
+	idle: bits/7thLegion_RepairPad.png
+		Start: 0
+	damaged-idle: bits/7thLegion_RepairPad.png
+		Start: 1
+	shadow-overlay: bits/7thLegion_RepairPad.png
+		Start: 2
+		ZOffset: 1768	
+
+7thlegion_gun_emplacement:
+	idle: bits/7thLegion_GunEmplacement.png
+		Start: 0 
+
+7thlegion_super_gun_emplacement:
+	idle: bits/7thLegion_SuperGunEmplacement.png
+		Start: 0 
+	shadow-overlay: bits/7thLegion_SuperGunEmplacement.png
+		Start: 1
+		ZOffset: 1768	

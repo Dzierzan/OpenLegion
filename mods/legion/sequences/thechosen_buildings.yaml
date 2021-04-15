@@ -1,0 +1,121 @@
+thechosen_base: 
+	idle: bits/TheChosen_Base.png
+		Start: 0
+	damaged-idle: bits/TheChosen_Base.png
+		Start: 1
+	shadow-overlay: bits/TheChosen_Base.png
+		Start: 2
+		ZOffset: 1768
+	damaged-shadow-overlay: bits/TheChosen_Base.png
+		Start: 3
+		ZOffset: 1768
+
+thechosen_barracks: 
+	idle: bits/TheChosen_Barracks.png
+		Start: 0
+	damaged-idle: bits/TheChosen_Barracks.png
+		Start: 1
+	shadow-overlay: bits/TheChosen_Barracks.png
+		Start: 2
+		ZOffset: 1768
+
+thechosen_power_plant: 
+	idle: bits/TheChosen_PowerPlant.png
+		Start: 0
+	damaged-idle: bits/TheChosen_PowerPlant.png
+		Start: 1
+	shadow-overlay: bits/TheChosen_PowerPlant.png
+		Start: 2
+		ZOffset: 1768
+
+thechosen_advanced_power_plant: 
+	idle: bits/TheChosen_AdvancedPowerPlant.png
+		Start: 0
+	shadow-overlay: bits/TheChosen_AdvancedPowerPlant.png
+		Start: 1
+		ZOffset: 1768
+
+thechosen_refinery:
+	idle: bits/TheChosen_Refinery.png
+		Start: 0
+	damaged-idle: bits/TheChosen_Refinery.png
+		Start: 1
+	shadow-overlay: bits/TheChosen_Refinery.png
+		Start: 2
+		ZOffset: 1768
+	damaged-shadow-overlay: bits/TheChosen_Refinery.png
+		Start: 3
+		ZOffset: 1768
+
+thechosen_hospital: 
+	idle: bits/TheChosen_Hospital.png
+		Start: 0
+	damaged-idle: bits/TheChosen_Hospital.png
+		Start: 1
+	shadow-overlay: bits/TheChosen_Hospital.png
+		Start: 2
+		ZOffset: 1768
+
+thechosen_vehicle_factory: 
+	idle: bits/TheChosen_TankFactory.png
+		Start: 0
+	damaged-idle: bits/TheChosen_TankFactory.png
+		Start: 1
+	shadow-overlay: bits/TheChosen_TankFactory.png
+		Start: 2
+		ZOffset: 1768
+
+thechosen_robot_hangar: 
+	idle: bits/TheChosen_MechFactory.png
+		Start: 0
+	damaged-idle: bits/TheChosen_MechFactory.png
+		Start: 1
+	shadow-overlay: bits/TheChosen_MechFactory.png
+		Start: 2
+		ZOffset: 1768
+
+thechosen_hi_tech_lab: 
+	idle: bits/TheChosen_TechCenter.png
+		Start: 0
+	damaged-idle: bits/TheChosen_TechCenter.png
+		Start: 1
+	shadow-overlay: bits/TheChosen_TechCenter.png
+		Start: 2
+		ZOffset: 1768
+
+thechosen_repair_bay:
+	idle: bits/TheChosen_RepairPad.png
+		Start: 0
+	damaged-idle: bits/TheChosen_RepairPad.png
+		Start: 1
+	shadow-overlay: bits/TheChosen_RepairPad.png
+		Start: 2
+		ZOffset: 1768	
+
+thechosen_repair_bay2:
+	idle: bits/TheChosen_RepairPad2.png
+		Start: 0
+	damaged-idle: bits/TheChosen_RepairPad2.png
+		Start: 1
+	shadow-overlay: bits/TheChosen_RepairPad2.png
+		Start: 2
+		ZOffset: 1768	
+	damaged-shadow-overlay: bits/TheChosen_RepairPad2.png
+		Start: 3
+		ZOffset: 1768
+
+thechosen_gun_emplacement:
+	idle: bits/TheChosen_GunEmplacement.png
+		Start: 0
+	damaged-idle: bits/TheChosen_GunEmplacement.png
+		Start: 1
+	shadow-overlay: bits/TheChosen_GunEmplacement.png
+		Start: 2
+		ZOffset: 1768	 
+
+thechosen_super_gun_emplacement:
+	idle: bits/TheChosen_SuperGunEmplacement.png
+		Start: 0 
+	shadow-overlay: bits/TheChosen_SuperGunEmplacement.png
+		Start: 1
+		ZOffset: 1768	
