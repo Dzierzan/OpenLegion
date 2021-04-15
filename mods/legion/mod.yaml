@@ -11,7 +11,6 @@ MapFolders:
 	legion|maps: System
 
 Rules:
-	legion|rules/dummyactor.yaml
 	legion|rules/mpspawn.yaml
 	legion|rules/palettes.yaml
 	legion|rules/player.yaml
@@ -25,7 +24,6 @@ Rules:
 	legion|rules/thechosen_vehicles.yaml
 
 Sequences:
-	legion|sequences/dummyactor.yaml
 	legion|sequences/editor-overlay.yaml
 	legion|sequences/mpspawn.yaml
 	legion|sequences/7thlegion_buildings.yaml
