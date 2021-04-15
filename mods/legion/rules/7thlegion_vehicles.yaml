@@ -1,4 +1,4 @@
-mobilebase:
+7thlegion_mobilebase:
 	Inherits@1: ^CoreVehicle
 	Tooltip:
 		Name: Mobile Base

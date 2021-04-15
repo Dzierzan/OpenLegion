@@ -103,6 +103,8 @@ flags:
 	Inherits: ^Glyphs
 	Regions:
 		Example: 226, 241, 30, 15
+		7thlegion: 226, 241, 30, 15
+		thechosen: 226, 241, 30, 15
 		Random: 226, 241, 30, 15
 		spectator: 226, 241, 30, 15
 

@@ -11,15 +11,23 @@
 		Name: Any
 		InternalName: Random
 		Side: Random
-		RandomFactionMembers: Example
-	Faction@Example:
-		Name: Example
-		InternalName: Example
-	StartingUnits@Example:
+		RandomFactionMembers: 7thlegion, thechosen
+	Faction@7thLegion:
+		Name: 7th Legion
+		InternalName: 7thlegion
+	StartingUnits@7thLegion:
 		Class: none
-		ClassName: Example
-		BaseActor: mobilebase
-		Factions: Example
+		ClassName: Mobile Base only
+		BaseActor: 7thlegion_mobilebase
+		Factions: 7thlegion
+	Faction@TheChosen:
+		Name: The Chosen
+		InternalName: thechosen
+	StartingUnits@TheChosen:
+		Class: none
+		ClassName: Mobile Base only
+		BaseActor: thechosen_mobilebase
+		Factions: thechosen
 
 world:
 	Inherits: ^CoreWorld
