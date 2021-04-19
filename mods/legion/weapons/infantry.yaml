@@ -13,3 +13,7 @@ light_machine_gun:
 		Damage: 500
 		Spread: 126
 		ValidTargets: Ground
+	Warhead@ThrowParticles: SpawnActor
+		Actors: spawn_particles
+		ValidTargets: Ground
+		TerrainTypes: Clear

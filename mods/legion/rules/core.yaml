@@ -77,9 +77,6 @@
 		VoiceSet: UnitVoice
 	# Statictics
 	UpdatesPlayerStatistics:
-	# Actors are killed when player/AI loses.
-	OwnerLostAction:
-		Action: Kill
 	# Health bar.
 	SelectionDecorations:
 
@@ -148,6 +145,11 @@
 	# Target "Structure" target for ai bombers.
 	Targetable:
 		TargetTypes: Ground, Structure
+	# Building has a shadow.
+	WithIdleOverlay:
+		Sequence: shadow-overlay
+		Palette: shadow
+		IsDecoration: true
 
 # Base for all towers.
 ^CoreTower:
@@ -231,6 +233,13 @@
 	AutoTarget:
 	AutoTargetPriority:
 		InvalidTargets: Structure
+	# Infantry shadow
+	WithIdleOverlay:
+		Sequence: shadow-overlay
+		Palette: shadow
+		IsDecoration: true
+	# Infantry has death animation.
+	WithDeathAnimation:
 
 # Base for all vehicles
 ^CoreVehicle:

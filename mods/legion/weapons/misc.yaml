@@ -1,0 +1,11 @@
+particle:
+	ReloadDelay: 60
+	Range: 1c0
+	Projectile: Bullet
+		Speed: 40, 75
+		Blockable: false
+		LaunchAngle: 100, 175
+		Image: particle
+		Palette: palette
+		BounceCount: 1
+		Shadow: True

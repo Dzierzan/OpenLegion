@@ -6,3 +6,20 @@ mpspawn:
 	RenderSpritesEditorOnly:
 	MapEditorData:
 		Categories: System
+
+spawn_particles:
+	Immobile:
+		OccupiesSpace: false
+	ChangesHealth:
+		Step: -100
+		StartIfBelow: 101
+	HitShape:
+	BodyOrientation:
+		QuantizedFacings: 1
+	Health:
+		HP: 100
+	HiddenUnderFog:
+	ThrowsShrapnel:
+		Weapons: particle
+		Pieces: 2,3
+		Range: 0c256, 0c756

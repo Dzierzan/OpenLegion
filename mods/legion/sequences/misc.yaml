@@ -6,3 +6,15 @@ moveflsh:
 		Length: 5
 		Tick: 80
 		ZOffset: 2047
+
+particle:
+	idle: bits/particle.png
+		Length: 16
+		Tick: 40
+		ZOffset: 500
+
+spawn_particles:
+  idle: bits/blank.png
+    Length: 16
+    Tick: 40
+    ZOffset: 500  
