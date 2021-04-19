@@ -1,0 +1,169 @@
+7thlegion_base:	
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^7thLegion
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ===== xxxx= xxxx=
+		Dimensions: 5,3
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+7thlegion_barracks:	
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^7thLegion
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4,2
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+7thlegion_power_plant:	
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^7thLegion
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ===== xxxx= xxxx=
+		Dimensions: 5,3
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+7thlegion_power_plant:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^7thLegion
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ===== xxxx= xxxx=
+		Dimensions: 5,3
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+7thlegion_refinery:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^7thLegion
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: =xx== xxxxx ==xx=
+		Dimensions: 5,3
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+7thlegion_hospital:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^7thLegion
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ==x= xxxx =xx=
+		Dimensions: 4,3
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+7thlegion_vehicle_factory:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^7thLegion
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: =xx= xxxx =x==
+		Dimensions: 4,3
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+7thlegion_robot_hangar:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^7thLegion
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ===== xxxx= xxxx=
+		Dimensions: 5, 3
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+7thlegion_hi_tech_lab:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^7thLegion
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ==== xxxx xxxx
+		Dimensions: 4,3
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+7thlegion_repair_bay:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^7thLegion
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: xxx ===
+		Dimensions: 3,2
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure

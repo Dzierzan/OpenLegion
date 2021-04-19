@@ -24,6 +24,8 @@ world:
 	CustomTerrainDebugOverlay:
 	WarheadDebugOverlay:
 	PathFinder:
+	BuildingInfluence:
+	ScreenShaker:
 
 editorworld:
 	Inherits: ^CoreWorld

@@ -1,0 +1,188 @@
+thechosen_base: 
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ===== = xxxx xxxxx =xxx=
+		Dimensions: 5,4
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+thechosen_barracks: 
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: =xx= xxxx xxx=
+		Dimensions: 4,3
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+thechosen_power_plant:	
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: xxx= xxxx
+		Dimensions: 4,2
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+thechosen_advanced_power_plant:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: xx== xxxx =xx=
+		Dimensions: 4,3
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+thechosen_refinery:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ===== xxxx= xxxx= =x===
+		Dimensions: 5,4
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+thechosen_hospital:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ===== xxxx= xxxxx =====
+		Dimensions: 5,4
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+thechosen_vehicle_factory:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ====== xxxxx= xxxxx=
+		Dimensions: 6, 3
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+thechosen_robot_hangar:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ===== xxxx= xxxxx ==xxx
+		Dimensions: 5,4
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+thechosen_hi_tech_lab:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ==== ==== xxx= xxxx =xxx
+		Dimensions: 4,5
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+	RenderSprites:
+		PlayerPalette: thechosentechcenter
+
+thechosen_repair_bay:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: === ===
+		Dimensions: 3,2
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+
+thechosen_repair_bay2:
+	Inherits@1: ^CoreBuilding
+	Inherits@2: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Base
+	Building:
+		Footprint: ==== ==xx ====
+		Dimensions: 4,3
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure

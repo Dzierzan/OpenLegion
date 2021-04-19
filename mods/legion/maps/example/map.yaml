@@ -26,6 +26,7 @@ Players:
 		Name: Creeps
 		NonCombatant: True
 		Faction: Random
+		Enemies: Multi0
 	PlayerReference@Multi0:
 		Name: Multi0
 		Playable: True
@@ -33,100 +34,161 @@ Players:
 		Enemies: Creeps
 
 Actors:
-	Actor0: mpspawn
+	Actor23: 7thlegion_base
 		Owner: Multi0
-		Location: 16,16
-	Actor7: 7thlegion_mobilebase
+		Location: 4,3
+	Actor24: 7thlegion_barracks
 		Owner: Multi0
-		Facing: 384
-		Location: 18,11
-	Actor8: thechosen_mobilebase
+		Location: 9,4
+	Actor25: 7thlegion_power_plant
 		Owner: Multi0
-		Facing: 384
-		Location: 14,11
-	Actor3: 7thlegion_machine_gunner
+		Location: 13,3
+	Actor26: 7thlegion_refinery
 		Owner: Multi0
-		Location: 19,15
-		Facing: 384
-	Actor4: 7thlegion_machine_gunner
+		Location: 4,7
+	Actor27: 7thlegion_hospital
 		Owner: Multi0
-		Location: 20,15
-		Facing: 384
-	Actor5: 7thlegion_machine_gunner
+		Location: 9,7
+	Actor28: 7thlegion_vehicle_factory
 		Owner: Multi0
-		Location: 19,16
-		Facing: 384
-	Actor6: 7thlegion_machine_gunner
+		Location: 14,7
+	Actor29: 7thlegion_robot_hangar
 		Owner: Multi0
-		Location: 20,16
-		Facing: 384
-	Actor9: thechosen_machine_gunner
+		Location: 4,11
+	Actor30: 7thlegion_hi_tech_lab
 		Owner: Multi0
-		SubCell: 3
-		Facing: 384
-		Location: 12,15
-	Actor10: thechosen_machine_gunner
+		Location: 9,11
+	Actor31: 7thlegion_repair_bay
+		Owner: Multi0
+		Location: 4,15
+	Actor32: 7thlegion_mobilebase
 		Owner: Multi0
 		Facing: 384
-		Location: 11,15
-		SubCell: 3
-	Actor11: thechosen_machine_gunner
+		Location: 15,12
+	Actor10: mpspawn
+		Owner: Neutral
+		Location: 15,21
+	Actor11: thechosen_base
+		Owner: Multi0
+		Location: 20,3
+	Actor12: thechosen_barracks
+		Owner: Multi0
+		Location: 26,4
+	Actor13: thechosen_power_plant
+		Owner: Multi0
+		Location: 20,8
+	Actor14: thechosen_advanced_power_plant
+		Owner: Multi0
+		Location: 26,8
+	Actor15: thechosen_refinery
+		Owner: Multi0
+		Location: 20,10
+	Actor16: thechosen_hospital
+		Owner: Multi0
+		Location: 25,11
+	Actor17: thechosen_robot_hangar
+		Owner: Multi0
+		Location: 20,13
+	Actor18: thechosen_hi_tech_lab
+		Owner: Multi0
+		Location: 26,14
+	Actor19: thechosen_repair_bay
+		Owner: Multi0
+		Location: 21,18
+	Actor20: thechosen_repair_bay2
+		Owner: Multi0
+		Location: 25,19
+	Actor21: thechosen_mobilebase
 		Owner: Multi0
 		Facing: 384
-		Location: 11,16
-		SubCell: 3
-	Actor12: thechosen_machine_gunner
+		Location: 17,15
+	Actor22: thechosen_machine_gunner
+		Owner: Multi0
+		SubCell: 1
+		Facing: 384
+		Location: 21,23
+	Actor33: thechosen_machine_gunner
 		Owner: Multi0
 		Facing: 384
-		Location: 12,16
-		SubCell: 3
-	Actor13: thechosen_machine_gunner
+		SubCell: 1
+		Location: 23,23
+	Actor34: thechosen_machine_gunner
 		Owner: Multi0
 		Facing: 384
-		Location: 12,14
-		SubCell: 3
-	Actor14: thechosen_machine_gunner
+		SubCell: 1
+		Location: 25,23
+	Actor35: thechosen_machine_gunner
 		Owner: Multi0
 		Facing: 384
-		Location: 11,14
-		SubCell: 3
-	Actor15: thechosen_machine_gunner
+		SubCell: 1
+		Location: 21,25
+	Actor36: thechosen_machine_gunner
 		Owner: Multi0
 		Facing: 384
-		SubCell: 3
-		Location: 10,14
-	Actor16: thechosen_machine_gunner
+		SubCell: 1
+		Location: 23,25
+	Actor37: thechosen_machine_gunner
 		Owner: Multi0
 		Facing: 384
-		Location: 10,15
-		SubCell: 3
-	Actor17: thechosen_machine_gunner
+		SubCell: 1
+		Location: 25,25
+	Actor38: thechosen_machine_gunner
 		Owner: Multi0
 		Facing: 384
-		Location: 10,16
-		SubCell: 3
-	Actor18: 7thlegion_machine_gunner
+		SubCell: 1
+		Location: 25,27
+	Actor39: thechosen_machine_gunner
 		Owner: Multi0
 		Facing: 384
-		Location: 18,15
-		SubCell: 3
-	Actor19: 7thlegion_machine_gunner
+		SubCell: 1
+		Location: 23,27
+	Actor40: thechosen_machine_gunner
 		Owner: Multi0
 		Facing: 384
-		Location: 18,14
-		SubCell: 3
-	Actor20: 7thlegion_machine_gunner
+		SubCell: 1
+		Location: 21,27
+	Actor41: 7thlegion_machine_gunner
+		Owner: Multi0
+		SubCell: 1
+		Facing: 384
+		Location: 9,17
+	Actor42: 7thlegion_machine_gunner
 		Owner: Multi0
 		Facing: 384
-		SubCell: 3
-		Location: 19,14
-	Actor21: 7thlegion_machine_gunner
+		SubCell: 1
+		Location: 11,17
+	Actor43: 7thlegion_machine_gunner
 		Owner: Multi0
 		Facing: 384
-		Location: 20,14
-		SubCell: 3
-	Actor22: 7thlegion_machine_gunner
+		SubCell: 1
+		Location: 13,17
+	Actor44: 7thlegion_machine_gunner
 		Owner: Multi0
 		Facing: 384
-		Location: 18,16
-		SubCell: 3
+		SubCell: 1
+		Location: 9,19
+	Actor45: 7thlegion_machine_gunner
+		Owner: Multi0
+		Facing: 384
+		SubCell: 1
+		Location: 11,19
+	Actor46: 7thlegion_machine_gunner
+		Owner: Multi0
+		Facing: 384
+		SubCell: 1
+		Location: 13,19
+	Actor47: 7thlegion_machine_gunner
+		Owner: Multi0
+		Facing: 384
+		SubCell: 1
+		Location: 13,21
+	Actor48: 7thlegion_machine_gunner
+		Owner: Multi0
+		Facing: 384
+		SubCell: 1
+		Location: 11,21
+	Actor49: 7thlegion_machine_gunner
+		Owner: Multi0
+		Facing: 384
+		SubCell: 1
+		Location: 9,21

@@ -136,9 +136,6 @@
 	# Should not be auto attacked.
 	Targetable@NoAutoAttack:
 		TargetTypes: NoAutoAttack
-	# Make unit notify being attacked.
-	AttackNotification:
-		Notifications:
 	# Notify when building lost.
 	ActorLostNotification:
 		Notification:
@@ -150,6 +147,12 @@
 		Sequence: shadow-overlay
 		Palette: shadow
 		IsDecoration: true
+	# Default hitshape
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
 
 # Base for all towers.
 ^CoreTower:

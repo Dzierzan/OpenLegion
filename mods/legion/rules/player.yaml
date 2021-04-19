@@ -6,7 +6,7 @@ player:
 	Inherits: ^baseplayer
 	DeveloperMode:
 		CheckboxEnabled: True
-
+	FrozenActorLayer:
 	PlayerRadarTerrain:
 	PlayerStatistics:
 
