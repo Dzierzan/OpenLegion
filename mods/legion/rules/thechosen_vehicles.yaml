@@ -8,3 +8,6 @@ thechosen_mobilebase:
 	Mobile:
 		TurnSpeed: 80
 		Speed: 120
+	WithShadow:
+		Offset: 75, 25, 0
+		ZOffset: -600
