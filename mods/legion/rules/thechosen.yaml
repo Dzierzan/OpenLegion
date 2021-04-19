@@ -1,0 +1,13 @@
+^CoreWorld:
+	Faction@TheChosen:
+		Name: The Chosen
+		InternalName: thechosen
+	StartingUnits@TheChosen:
+		Class: none
+		ClassName: Mobile Base only
+		BaseActor: thechosen_mobilebase
+		Factions: thechosen
+
+^TheChosen:
+	RenderSprites:
+		PlayerPalette: thechosen

@@ -1,0 +1,15 @@
+light_machine_gun:
+	ValidTargets: Ground
+	Range: 9c0
+	ReloadDelay: 25
+	Report: SFX|chl.wav, SFX|chl2.wav 
+	Projectile: Bullet
+		Speed: 350
+		Blockable: false
+		Inaccuracy: 100
+		Image: projectiles
+		Sequences: lazer_A
+	Warhead@Damage: SpreadDamage
+		Damage: 500
+		Spread: 126
+		ValidTargets: Ground

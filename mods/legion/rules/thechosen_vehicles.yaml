@@ -1,5 +1,6 @@
 thechosen_mobilebase:
 	Inherits@1: ^CoreVehicle
+	Inherits@2: ^TheChosen
 	Tooltip:
 		Name: Mobile Base
 	Health:
@@ -7,7 +8,3 @@ thechosen_mobilebase:
 	Mobile:
 		TurnSpeed: 80
 		Speed: 120
-	-AutoTarget:
-	-AutoTargetPriority:
-	RenderSprites:
-		PlayerPalette: thechosen

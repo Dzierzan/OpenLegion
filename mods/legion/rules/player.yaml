@@ -5,6 +5,8 @@
 player:
 	Inherits: ^baseplayer
 	DeveloperMode:
+		CheckboxEnabled: True
+
 	PlayerRadarTerrain:
 	PlayerStatistics:
 

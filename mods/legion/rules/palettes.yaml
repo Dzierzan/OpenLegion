@@ -14,6 +14,10 @@
 		Filename: bits/PAL1.pal
 		TransparentIndex: 0
 		AllowModifiers: false
+	PaletteFromGimpOrJascFile@effect:
+		Name: effect
+		Filename: bits/PAL1.pal
+		Premultiply: false
 	PaletteFromGimpOrJascFile@colorpicker:
 		Name: colorpicker
 		Filename: bits/PAL1.pal

@@ -1,0 +1,13 @@
+^CoreWorld:
+	Faction@7thLegion:
+		Name: 7th Legion
+		InternalName: 7thlegion
+	StartingUnits@7thLegion:
+		Class: none
+		ClassName: Mobile Base only
+		BaseActor: 7thlegion_mobilebase
+		Factions: 7thlegion
+
+^7thLegion:
+	RenderSprites:
+		PlayerPalette: 7thlegion

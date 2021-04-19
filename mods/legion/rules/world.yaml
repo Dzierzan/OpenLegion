@@ -12,22 +12,6 @@
 		InternalName: Random
 		Side: Random
 		RandomFactionMembers: 7thlegion, thechosen
-	Faction@7thLegion:
-		Name: 7th Legion
-		InternalName: 7thlegion
-	StartingUnits@7thLegion:
-		Class: none
-		ClassName: Mobile Base only
-		BaseActor: 7thlegion_mobilebase
-		Factions: 7thlegion
-	Faction@TheChosen:
-		Name: The Chosen
-		InternalName: thechosen
-	StartingUnits@TheChosen:
-		Class: none
-		ClassName: Mobile Base only
-		BaseActor: thechosen_mobilebase
-		Factions: thechosen
 
 world:
 	Inherits: ^CoreWorld
@@ -38,6 +22,7 @@ world:
 	DebugVisualizations:
 	TerrainGeometryOverlay:
 	CustomTerrainDebugOverlay:
+	WarheadDebugOverlay:
 	PathFinder:
 
 editorworld:
@@ -47,3 +32,4 @@ editorworld:
 	EditorCursorLayer:
 	EditorSelectionLayer:
 	TerrainGeometryOverlay:
+	EditorResourceLayer:

@@ -75,6 +75,13 @@
 	# Default voice
 	Voiced:
 		VoiceSet: UnitVoice
+	# Statictics
+	UpdatesPlayerStatistics:
+	# Actors are killed when player/AI loses.
+	OwnerLostAction:
+		Action: Kill
+	# Health bar.
+	SelectionDecorations:
 
 # Base for all buildings, towers and walls.
 ^CoreConstruction:
@@ -189,19 +196,14 @@
 		WarnProbability: 0
 	# Allow 5 infantry units to share a cell and set movement modifiers.
 	Mobile:
-		Locomotor: unit
+		Locomotor: infantry
 	# Actor can be targeted by anything which attacks ground.
 	Targetable:
 		TargetTypes: Ground, Infantry
 	# Calculated size for infantry to match shared cells.
-	Selectable:
-		Bounds: 24,24
-	# Infantry hitshape
 	HitShape:
 		Type: Circle
 			Radius: 128
-	# Infantry has an animation while moving: walking.
-	WithMoveAnimation:
 	# Group all infantry in the map editor.
 	MapEditorData:
 		Categories: Infantry
@@ -237,7 +239,7 @@
 		Type: vehicle
 	# Vehicles can kill infantry by moving over them and set movement modifiers.
 	Mobile:
-		Locomotor: unit
+		Locomotor: vehicle
 	# Actor can be targeted by anything which attacks ground.
 	Targetable:
 		TargetTypes: Ground
@@ -251,13 +253,15 @@
 	MapEditorData:
 		Categories: Vehicle
 	# Autotargetting actors
-	AutoTarget:
-	AutoTargetPriority:
-		InvalidTargets: Structure
 
 ^CoreWorld:
-	Locomotor@Unit:
-		Name: unit
+	Locomotor@Infantry:
+		Name: infantry
+		SharesCell: True
+		TerrainSpeeds:
+			Clear: 100
+	Locomotor@Vehicle:
+		Name: vehicle
 		TerrainSpeeds:
 			Clear: 100
 
@@ -269,6 +273,12 @@
 	AttackTurreted:
 		Voice:
 	# Auto target enemies nearby.
+	AutoTarget:
+	AutoTargetPriority:
+		InvalidTargets: Structure
+
+^CoreArmed:
+	AttackFrontal:
 	AutoTarget:
 	AutoTargetPriority:
 		InvalidTargets: Structure
