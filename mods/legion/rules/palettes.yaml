@@ -30,6 +30,10 @@
 		BasePalette: palette
 		BaseName: 7thlegion
 		RemapIndex: 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182
+	OverlayPlayerColorPalette@7th-legion-repairbay:
+		BasePalette: palette
+		BaseName: 7thlegionrepairbay
+		RemapIndex: 8, 9, 10, 19, 27, 28, 29, 52, 53, 54, 55, 56, 57, 226, 227, 236, 237, 238, 241, 246, 249, 252, 255
 	OverlayPlayerColorPalette@the-chosen:
 		BasePalette: palette
 		BaseName: thechosen
@@ -38,6 +42,18 @@
 		BasePalette: palette
 		BaseName: thechosentechcenter
 		RemapIndex: 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 27, 28, 29, 30, 31
+	OverlayPlayerColorPalette@the-chosen-barracks:
+		BasePalette: palette
+		BaseName: thechosenbarracks
+		RemapIndex: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 29, 30, 31, 54, 55, 56, 238, 242, 244
+	OverlayPlayerColorPalette@the-chosen-power-plant:
+		BasePalette: palette
+		BaseName: thechosenpowerplant
+		RemapIndex: 12, 13, 14, 15, 16, 17, 18, 19, 29, 30, 31
+	OverlayPlayerColorPalette@the-chosen-base:
+		BasePalette: palette
+		BaseName: thechosenbase
+		RemapIndex: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 29, 30, 31, 49, 56, 57, 192, 193, 194, 196, 199, 200, 201, 204, 207, 213, 216, 217, 222, 223, 224, 227, 228, 230, 231, 233, 235, 237, 242, 247, 249
 	PaletteFromRGBA@highlight:
 		Name: highlight
 		R: 255

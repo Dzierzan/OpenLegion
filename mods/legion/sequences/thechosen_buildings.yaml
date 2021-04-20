@@ -69,11 +69,11 @@ thechosen_hospital:
 		Start: 12
 
 thechosen_vehicle_factory: 
-	idle: bits/TheChosen_TankFactory.png
+	idle: bits/TheChosen_VehiclesFactory.png
 		Start: 0
-	damaged-idle: bits/TheChosen_TankFactory.png
+	damaged-idle: bits/TheChosen_VehiclesFactory.png
 		Start: 1
-	shadow-overlay: bits/TheChosen_TankFactory.png
+	shadow-overlay: bits/TheChosen_VehiclesFactory.png
 		Start: 2
 		ZOffset: 1768
 	icon: GFX|ICONSB1.BIM

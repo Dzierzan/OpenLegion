@@ -167,3 +167,5 @@
 		Range: 4c0
 	Targetable:
 		TargetTypes: Ground, Structure
+	RenderSprites:
+		PlayerPalette: 7thlegionrepairbay
