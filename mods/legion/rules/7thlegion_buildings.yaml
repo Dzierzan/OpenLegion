@@ -76,9 +76,9 @@
 		Dimensions: 5,3
 	HitShape:
 		Type: Rectangle
-			TopLeft: -1024, -1736
-			BottomRight: 1024, 256
-		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
+			TopLeft: -2048, -1256
+			BottomRight: 2048, 1256
+		TargetableOffsets: 1024,-512,0,1024,512,0,   0,-1900,0,0,-1024,0,0,0,0,0,900,0,   -1024,-512,0,-1024,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -142,9 +142,9 @@
 		Dimensions: 5, 3
 	HitShape:
 		Type: Rectangle
-			TopLeft: -1024, -1736
-			BottomRight: 1024, 256
-		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
+			TopLeft: -2060, -1500
+			BottomRight: 1260, 1500
+		TargetableOffsets: 900,-1700,0,1024,-724,0,1024,400,0,   0,-1700,0,0,-724,0,0,400,0,   -1024,-1700,0,-1024,-724,0,-1024,400,0
 	Health:
 		HP: 10000
 	RevealsShroud:
