@@ -8,6 +8,11 @@ thechosen_base:
 	Building:
 		Footprint: ===== = xxxx xxxxx =xxx=
 		Dimensions: 5,4
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -27,6 +32,11 @@ thechosen_barracks:
 	Building:
 		Footprint: =xx= xxxx xxx=
 		Dimensions: 4,3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -46,6 +56,11 @@ thechosen_power_plant:
 	Building:
 		Footprint: xxx= xxxx
 		Dimensions: 4,2
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -65,6 +80,11 @@ thechosen_advanced_power_plant:
 	Building:
 		Footprint: xx== xxxx =xx=
 		Dimensions: 4,3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -84,6 +104,11 @@ thechosen_refinery:
 	Building:
 		Footprint: ===== xxxx= xxxx= =x===
 		Dimensions: 5,4
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -101,6 +126,11 @@ thechosen_hospital:
 	Building:
 		Footprint: ===== xxxx= xxxxx =====
 		Dimensions: 5,4
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -118,6 +148,11 @@ thechosen_vehicle_factory:
 	Building:
 		Footprint: ====== xxxxx= xxxxx=
 		Dimensions: 6, 3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -135,6 +170,11 @@ thechosen_robot_hangar:
 	Building:
 		Footprint: ===== xxxx= xxxxx ==xxx
 		Dimensions: 5,4
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -152,6 +192,11 @@ thechosen_hi_tech_lab:
 	Building:
 		Footprint: ==== ==== xxx= xxxx =xxx
 		Dimensions: 4,5
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -171,6 +216,11 @@ thechosen_repair_bay:
 	Building:
 		Footprint: === ===
 		Dimensions: 3,2
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -188,6 +238,11 @@ thechosen_repair_bay2:
 	Building:
 		Footprint: ==== ==xx ====
 		Dimensions: 4,3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:

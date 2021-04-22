@@ -26,6 +26,7 @@ world:
 	PathFinder:
 	BuildingInfluence:
 	ScreenShaker:
+	DomainIndex:
 
 editorworld:
 	Inherits: ^CoreWorld

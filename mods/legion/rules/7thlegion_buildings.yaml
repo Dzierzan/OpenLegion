@@ -1,4 +1,4 @@
-7thlegion_base:	
+7thlegion_base:
 	Inherits@1: ^CoreBuilding
 	Inherits@2: ^7thLegion
 	Valued:
@@ -8,6 +8,11 @@
 	Building:
 		Footprint: ===== xxxx= xxxx=
 		Dimensions: 5,3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -2548, -1224
+			BottomRight: 2000, 1524
+		TargetableOffsets: 512,-2000,0,512,-1024,0,512,0,0,512,1024,0,512,1024,0,   -512,-1900,0,-512,-1024,0,-512,0,0,-512,1024,0,-512,1024,0,   -1524,-1800,0,-1524,-1024,0,-1524,0,0,-1524,724,0,-1524,724,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -15,7 +20,7 @@
 	Targetable:
 		TargetTypes: Ground, Structure
 
-7thlegion_barracks:	
+7thlegion_barracks:
 	Inherits@1: ^CoreBuilding
 	Inherits@2: ^7thLegion
 	Valued:
@@ -25,23 +30,11 @@
 	Building:
 		Footprint: xxxx xxxx
 		Dimensions: 4,2
-	Health:
-		HP: 10000
-	RevealsShroud:
-		Range: 4c0
-	Targetable:
-		TargetTypes: Ground, Structure
-
-7thlegion_power_plant:	
-	Inherits@1: ^CoreBuilding
-	Inherits@2: ^7thLegion
-	Valued:
-		Cost: 300
-	Tooltip:
-		Name: Base
-	Building:
-		Footprint: ===== xxxx= xxxx=
-		Dimensions: 5,3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1048, -1024
+			BottomRight: 1048, 1024
+		TargetableOffsets: -512, -512, 0, 512, -512, 0, -512, 512, 0, 512, 512, 0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -59,6 +52,11 @@
 	Building:
 		Footprint: ===== xxxx= xxxx=
 		Dimensions: 5,3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -2024, -512
+			BottomRight: 1024, 1524
+		TargetableOffsets: -256,-1524,0,-256,-512,0,-256,512,0,   -1224,-1524,0,-1224,-512,0,-1224,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -76,6 +74,11 @@
 	Building:
 		Footprint: =xx== xxxxx ==xx=
 		Dimensions: 5,3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -93,6 +96,11 @@
 	Building:
 		Footprint: ==x= xxxx =xx=
 		Dimensions: 4,3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1024
+			BottomRight: 1024, 1024
+		TargetableOffsets: 512,-512,0,512,512,0,   -1024,-512,0,-1024,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -110,6 +118,11 @@
 	Building:
 		Footprint: =xx= xxxx =x==
 		Dimensions: 4,3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1500,-1500
+			BottomRight: 1500,1500
+		TargetableOffsets: 1024,-1024,0,1324,0,0,   0,-724,0,0,512,0,   -1024,-412,0,-1024,1024,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -127,6 +140,11 @@
 	Building:
 		Footprint: ===== xxxx= xxxx=
 		Dimensions: 5, 3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -1736
+			BottomRight: 1024, 256
+		TargetableOffsets: 700,-512,0, 400,512,0, 1900,-512,0, 1900,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -144,6 +162,11 @@
 	Building:
 		Footprint: ==== xxxx xxxx
 		Dimensions: 4,3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -512
+			BottomRight: 1024, 1024
+		TargetableOffsets: 256,-512,0, 256,512,0, -1024,-512,0, -1024,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -161,6 +184,11 @@
 	Building:
 		Footprint: xxx ===
 		Dimensions: 3,2
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1024, -512
+			BottomRight: 1024, 512
+		TargetableOffsets: 512,-512,0, 512,512,0, -512,-512,0, -512,512,0
 	Health:
 		HP: 10000
 	RevealsShroud:

@@ -147,12 +147,6 @@
 		Sequence: shadow-overlay
 		Palette: shadow
 		IsDecoration: true
-	# Default hitshape
-	HitShape:
-		UseTargetableCellsOffsets: true
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
 
 # Base for all towers.
 ^CoreTower:
