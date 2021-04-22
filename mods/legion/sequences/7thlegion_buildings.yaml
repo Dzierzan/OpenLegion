@@ -5,7 +5,7 @@
 		Start: 1
 	shadow-overlay: bits/7thLegion_Base.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB.BIM
 		Start: 1
 
@@ -16,10 +16,10 @@
 		Start: 1
 	shadow-overlay: bits/7thLegion_Barracks.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	damaged-shadow-overlay: bits/7thLegion_Barracks.png
 		Start: 3
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB.BIM
 		Start: 11
 
@@ -30,7 +30,7 @@
 		Start: 1
 	shadow-overlay: bits/7thLegion_PowerPlant.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB.BIM
 		Start: 3
 
@@ -39,7 +39,7 @@
 		Start: 0
 	shadow-overlay: bits/7thLegion_Refinery.png
 		Start: 1
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB.BIM
 		Start: 2
 
@@ -50,10 +50,10 @@
 		Start: 1
 	shadow-overlay: bits/7thLegion_Hospital.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	damaged-shadow-overlay: bits/7thLegion_Barracks.png
 		Start: 3
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB.BIM
 		Start: 12
 
@@ -64,7 +64,7 @@
 		Start: 1
 	shadow-overlay: bits/7thLegion_TankFactory.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB.BIM
 		Start: 0
 
@@ -75,7 +75,7 @@
 		Start: 1
 	shadow-overlay: bits/7thLegion_MechFactory.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB.BIM
 		Start: 13
 
@@ -86,7 +86,7 @@
 		Start: 1
 	shadow-overlay: bits/7thLegion_TechCenter.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB.BIM
 		Start: 9
 
@@ -97,7 +97,7 @@
 		Start: 1
 	shadow-overlay: bits/7thLegion_RepairPad.png
 		Start: 2
-		ZOffset: 1768	
+		ZOffset: -1500	
 	icon: GFX|ICONSB.BIM
 		Start: 10
 
@@ -112,6 +112,6 @@
 		Start: 0 
 	shadow-overlay: bits/7thLegion_SuperGunEmplacement.png
 		Start: 1
-		ZOffset: 1768	
+		ZOffset: -1500	
 	icon: GFX|ICONSB.BIM
 		Start: 8

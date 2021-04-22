@@ -5,10 +5,10 @@ thechosen_base:
 		Start: 1
 	shadow-overlay: bits/TheChosen_Base.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	damaged-shadow-overlay: bits/TheChosen_Base.png
 		Start: 3
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB1.BIM
 		Start: 1
 
@@ -19,7 +19,7 @@ thechosen_barracks:
 		Start: 1
 	shadow-overlay: bits/TheChosen_Barracks.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB1.BIM
 		Start: 11
 
@@ -30,7 +30,7 @@ thechosen_power_plant:
 		Start: 1
 	shadow-overlay: bits/TheChosen_PowerPlant.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB1.BIM
 		Start: 3
 
@@ -39,7 +39,7 @@ thechosen_advanced_power_plant:
 		Start: 0
 	shadow-overlay: bits/TheChosen_AdvancedPowerPlant.png
 		Start: 1
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB1.BIM
 		Start: 3
 
@@ -50,10 +50,10 @@ thechosen_refinery:
 		Start: 1
 	shadow-overlay: bits/TheChosen_Refinery.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	damaged-shadow-overlay: bits/TheChosen_Refinery.png
 		Start: 3
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB1.BIM
 		Start: 2
 
@@ -64,7 +64,7 @@ thechosen_hospital:
 		Start: 1
 	shadow-overlay: bits/TheChosen_Hospital.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB1.BIM
 		Start: 12
 
@@ -75,7 +75,7 @@ thechosen_vehicle_factory:
 		Start: 1
 	shadow-overlay: bits/TheChosen_VehiclesFactory.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB1.BIM
 		Start: 0
 
@@ -86,7 +86,7 @@ thechosen_robot_hangar:
 		Start: 1
 	shadow-overlay: bits/TheChosen_MechFactory.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB1.BIM
 		Start: 13
 
@@ -97,7 +97,7 @@ thechosen_hi_tech_lab:
 		Start: 1
 	shadow-overlay: bits/TheChosen_TechCenter.png
 		Start: 2
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB1.BIM
 		Start: 9
 
@@ -108,7 +108,7 @@ thechosen_repair_bay:
 		Start: 1
 	shadow-overlay: bits/TheChosen_RepairPad.png
 		Start: 2
-		ZOffset: 1768	
+		ZOffset: -1500	
 	icon: GFX|ICONSB1.BIM
 		Start: 10
 
@@ -119,10 +119,10 @@ thechosen_repair_bay2:
 		Start: 1
 	shadow-overlay: bits/TheChosen_RepairPad2.png
 		Start: 2
-		ZOffset: 1768	
+		ZOffset: -1500	
 	damaged-shadow-overlay: bits/TheChosen_RepairPad2.png
 		Start: 3
-		ZOffset: 1768
+		ZOffset: -1500
 	icon: GFX|ICONSB1.BIM
 		Start: 10
 
@@ -133,7 +133,7 @@ thechosen_gun_emplacement:
 		Start: 1
 	shadow-overlay: bits/TheChosen_GunEmplacement.png
 		Start: 2
-		ZOffset: 1768	 
+		ZOffset: -1500	 
 	icon: GFX|ICONSB1.BIM
 		Start: 7
 
@@ -142,6 +142,6 @@ thechosen_super_gun_emplacement:
 		Start: 0 
 	shadow-overlay: bits/TheChosen_SuperGunEmplacement.png
 		Start: 1
-		ZOffset: 1768	
+		ZOffset: -1500	
 	icon: GFX|ICONSB1.BIM
 		Start: 8
