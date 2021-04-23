@@ -1,6 +1,6 @@
-thechosen_gun_emplacement:
+7thlegion_gun_emplacement:
 	Inherits@1: ^CoreTower
-	Inherits@2: ^TheChosen
+	Inherits@3: ^7thLegion
 	Valued:
 		Cost: 300
 	Tooltip:
@@ -8,9 +8,6 @@ thechosen_gun_emplacement:
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-	HitShape:
-		Type: Circle
-			Radius: 1000
 	Health:
 		HP: 10000
 	RevealsShroud:
@@ -20,4 +17,6 @@ thechosen_gun_emplacement:
 	Armament:
 		Weapon: light_machine_gun
 		LocalOffset: 0,0,0
-	-WithSpriteTurret:
+	Turreted:
+		Offset: 0,0,0
+	-WithIdleOverlay:

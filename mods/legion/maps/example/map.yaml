@@ -198,3 +198,9 @@ Actors:
 	Actor51: thechosen_gun_emplacement
 		Owner: Multi0
 		Location: 21,29
+	Actor52: thechosen_super_gun_emplacement
+		Owner: Multi0
+		Location: 23,29
+	Actor53: 7thlegion_gun_emplacement
+		Owner: Multi0
+		Location: 4,20

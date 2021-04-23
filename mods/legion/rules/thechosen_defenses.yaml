@@ -1,0 +1,42 @@
+thechosen_gun_emplacement:
+	Inherits@1: ^CoreTower
+	Inherits@2: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Gun Emplacement
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0
+	-WithSpriteTurret:
+
+thechosen_super_gun_emplacement:
+	Inherits@1: ^CoreTower
+	Inherits@3: ^TheChosen
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Super Gun Emplacement
+	Building:
+		Footprint: xx
+		Dimensions: 2,1
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0
+	Turreted:
+		Offset: 0,0,0

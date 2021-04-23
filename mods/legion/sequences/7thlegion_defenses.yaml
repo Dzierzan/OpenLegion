@@ -1,0 +1,10 @@
+7thlegion_gun_emplacement:
+	idle: bits/7thLegion_GunEmplacement.png
+		Start: 0
+		Offset: 0,0
+	turret: GFX|GUNANIM.BIM
+		Frames: 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+		Facings: -32
+		Offset: -25,-25
+	icon: GFX|ICONSB.BIM
+		Start: 7

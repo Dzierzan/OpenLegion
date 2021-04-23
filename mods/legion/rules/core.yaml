@@ -161,10 +161,8 @@
 		Footprint: xx==
 	# Correct Hitshape and selection box for all towers
 	HitShape:
-		Type: Rectangle
-			TopLeft: -1024, -1024
-			BottomRight: 1024, 0
-		TargetableOffsets: 819,-512,0, 819,512,0
+		Type: Circle
+			Radius: 756
 	Selectable:
 		Bounds: 64, 64, 0, -16
 	# Require other actor nearby which provides buildable area in order to place a tower.
@@ -173,15 +171,8 @@
 		Adjacent: 4
 	# Towers will show an explosion upon being destroyed.
 	#Explodes: TODO
-	AttackTurreted:
-	# Towers also have to be destroyed when short game option is used.
 	MustBeDestroyed:
 		RequiredForShortGame: true
-	# Render the tower a little bit when destroyed.
-	# Default looking south
-	Turreted:
-		InitialFacing: 512
-		RealignDelay: -1
 	# Building has a shadow.
 	WithIdleOverlay:
 		Sequence: shadow-overlay
@@ -222,9 +213,9 @@
 	# Facing tolerance for frontal attack.
 	AttackFrontal:
 		FacingTolerance: 5
-	# This trait needs to be removed as it won't work with WithInfantryBody
+	# This trait needs to be disabled as it won't work with WithInfantryBody.
 	-WithFacingSpriteBody:
-	# This actor will reveal the shroud
+	# This actor will reveal the shroud.
 	RevealsShroud:
 		Range: 10c0
 	# Random idle turning
@@ -280,6 +271,9 @@
 ^CoreTurret:
 	# General turret behavior.
 	Turreted:
+		TurnSpeed: 60
+		InitialFacing: -500
+		RealignDelay: -1
 	# If it has a turret, it should attack with its turret only, meaning it can aim and fire with it while moving.
 	AttackTurreted:
 		Voice:
@@ -291,7 +285,10 @@
 		InvalidTargets: Structure
 
 ^CoreArmed:
+	# Actor is always facing another actor when attacking.
 	AttackFrontal:
+	# The actor will automatically engage the enemy when it is in range.
 	AutoTarget:
+	# Specifies the target types and relative priority used by AutoTarget to decide what to targe
 	AutoTargetPriority:
 		InvalidTargets: Structure
