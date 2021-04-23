@@ -21,10 +21,12 @@ Rules:
 	legion|rules/7thlegion_buildings.yaml
 	legion|rules/7thlegion_infantry.yaml
 	legion|rules/7thlegion_vehicles.yaml
+	legion|rules/7thlegion_defenses.yaml
 	legion|rules/7thlegion.yaml
 	legion|rules/thechosen_buildings.yaml
 	legion|rules/thechosen_infantry.yaml
 	legion|rules/thechosen_vehicles.yaml
+	legion|rules/thechosen_defenses.yaml
 	legion|rules/thechosen.yaml
 
 Sequences:
@@ -32,9 +34,11 @@ Sequences:
 	legion|sequences/7thlegion_buildings.yaml
 	legion|sequences/7thlegion_infantry.yaml
 	legion|sequences/7thlegion_vehicles.yaml
+	legion|sequences/7thlegion_vehicles.yaml
 	legion|sequences/thechosen_buildings.yaml
 	legion|sequences/thechosen_infantry.yaml
 	legion|sequences/thechosen_vehicles.yaml
+	legion|sequences/thechosen_defenses.yaml
 	legion|sequences/explosions.yaml
 	legion|sequences/misc.yaml
 	legion|sequences/weapons.yaml

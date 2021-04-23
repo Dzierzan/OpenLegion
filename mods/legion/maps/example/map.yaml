@@ -195,3 +195,6 @@ Actors:
 	Actor50: thechosen_vehicle_factory
 		Owner: Multi0
 		Location: 26,23
+	Actor51: thechosen_gun_emplacement
+		Owner: Multi0
+		Location: 21,29

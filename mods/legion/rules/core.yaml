@@ -182,6 +182,11 @@
 	Turreted:
 		InitialFacing: 512
 		RealignDelay: -1
+	# Building has a shadow.
+	WithIdleOverlay:
+		Sequence: shadow-overlay
+		Palette: shadow
+		IsDecoration: true
 
 # Base for all infantry.
 ^CoreInfantry:
@@ -278,6 +283,8 @@
 	# If it has a turret, it should attack with its turret only, meaning it can aim and fire with it while moving.
 	AttackTurreted:
 		Voice:
+	# Renders a turret sprite
+	WithSpriteTurret:
 	# Auto target enemies nearby.
 	AutoTarget:
 	AutoTargetPriority:

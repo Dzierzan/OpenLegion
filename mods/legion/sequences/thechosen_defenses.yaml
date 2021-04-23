@@ -1,0 +1,13 @@
+thechosen_gun_emplacement:
+	idle: bits/TheChosen_GunEmplacement.png
+		Start: 0
+		Offset: 0,-20
+	damaged-idle: bits/TheChosen_GunEmplacement.png
+		Start: 1
+		Offset: 0,-20
+	shadow-overlay: bits/TheChosen_GunEmplacement.png
+		Start: 2
+		Offset: 9,-17
+		ZOffset: -1500
+	icon: GFX|ICONSB1.BIM
+		Start: 7
