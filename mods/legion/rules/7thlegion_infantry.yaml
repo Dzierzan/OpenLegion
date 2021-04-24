@@ -14,3 +14,20 @@
 	Armament:
 		Weapon: light_machine_gun
 		LocalOffset: 0,0,0
+
+7thlegion_commander:
+	Inherits@1: ^CoreInfantry
+	Inherits@2: ^CoreArmed
+	Inherits@3: ^7thLegion
+	Tooltip:
+		Name: Commander
+	Health:
+		HP: 5000
+	Mobile:
+		Speed: 75
+	Buildable:
+		BuildDuration: 350
+		Description: This unit shoots stuff and kills it.\n Usually. Also makes a nice cheese sandwich\n in the field for those hungry troops.
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0
