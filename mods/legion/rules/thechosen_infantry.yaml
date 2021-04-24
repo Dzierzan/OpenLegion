@@ -31,3 +31,22 @@ thechosen_commander:
 	Armament:
 		Weapon: light_machine_gun
 		LocalOffset: 0,0,0
+
+thechosen_priest:
+	Inherits@1: ^CoreInfantry
+	Inherits@2: ^CoreArmed
+	Inherits@3: ^TheChosen
+	Tooltip:
+		Name: Priest
+	Health:
+		HP: 5000
+	Mobile:
+		Speed: 75
+	Buildable:
+		BuildDuration: 350
+		Description: This unit shoots stuff and kills it.\n Heals other ally units.
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0
+	RenderSprites:
+		PlayerPalette: thechosenpriest

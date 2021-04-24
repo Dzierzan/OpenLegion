@@ -234,3 +234,33 @@ Actors:
 		Facing: 384
 		SubCell: 1
 		Location: 25,21
+	Actor60: 7thlegion_priest
+		Owner: Multi0
+		SubCell: 1
+		Facing: 384
+		Location: 9,24
+	Actor61: 7thlegion_priest
+		Owner: Multi0
+		Facing: 384
+		SubCell: 1
+		Location: 11,24
+	Actor62: 7thlegion_priest
+		Owner: Multi0
+		Facing: 384
+		SubCell: 1
+		Location: 13,24
+	Actor63: thechosen_priest
+		Owner: Multi0
+		Facing: 384
+		SubCell: 1
+		Location: 19,21
+	Actor64: thechosen_priest
+		Owner: Multi0
+		Facing: 384
+		SubCell: 1
+		Location: 19,23
+	Actor65: thechosen_priest
+		Owner: Multi0
+		Facing: 384
+		SubCell: 1
+		Location: 19,25
