@@ -33,7 +33,7 @@
 	OverlayPlayerColorPalette@the-chosen:
 		BasePalette: palette
 		BaseName: thechosen
-		RemapIndex: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 29, 30, 31
+		RemapIndex: 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 27, 28, 29, 30, 31
 	OverlayPlayerColorPalette@the-chosen-tech-center:
 		BasePalette: palette
 		BaseName: thechosentechcenter
@@ -50,6 +50,11 @@
 		BasePalette: palette
 		BaseName: thechosenbase
 		RemapIndex: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 29, 30, 31, 49, 56, 57, 192, 193, 194, 196, 199, 200, 201, 204, 207, 213, 216, 217, 222, 223, 224, 227, 228, 230, 231, 233, 235, 237, 242, 247, 249
+	OverlayPlayerColorPalette@the-chosen-mobile-base:
+		BasePalette: palette
+		BaseName: thechosenmobilebase
+		RemapIndex: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 29, 30, 31
+
 	PaletteFromRGBA@highlight:
 		Name: highlight
 		R: 255

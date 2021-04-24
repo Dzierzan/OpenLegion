@@ -11,3 +11,5 @@ thechosen_mobilebase:
 	WithShadow:
 		Offset: 75, 25, 0
 		ZOffset: -600
+	RenderSprites:
+		PlayerPalette: thechosenmobilebase
