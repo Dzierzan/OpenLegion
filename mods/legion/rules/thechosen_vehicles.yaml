@@ -13,3 +13,20 @@ thechosen_mobilebase:
 		ZOffset: -600
 	RenderSprites:
 		PlayerPalette: thechosenmobilebase
+
+thechosen_slaven:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CoreArmed
+	Inherits@3: ^TheChosen
+	Tooltip:
+		Name: Slaven
+	Health:
+		HP: 5000
+	Mobile:
+		Speed: 125
+	Buildable:
+		BuildDuration: 350
+		Description: Slaven
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0

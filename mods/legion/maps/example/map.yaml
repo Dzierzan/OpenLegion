@@ -264,3 +264,27 @@ Actors:
 		Facing: 384
 		SubCell: 1
 		Location: 19,25
+	Actor66: 7thlegion_slaven
+		Owner: Multi0
+		Facing: 384
+		Location: 9,26
+	Actor67: 7thlegion_slaven
+		Owner: Multi0
+		Facing: 384
+		Location: 11,26
+	Actor68: 7thlegion_slaven
+		Owner: Multi0
+		Facing: 384
+		Location: 13,26
+	Actor69: thechosen_slaven
+		Owner: Multi0
+		Facing: 384
+		Location: 18,31
+	Actor70: thechosen_slaven
+		Owner: Multi0
+		Facing: 384
+		Location: 20,31
+	Actor71: thechosen_slaven
+		Owner: Multi0
+		Facing: 384
+		Location: 22,31
