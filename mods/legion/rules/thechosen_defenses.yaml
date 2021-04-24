@@ -40,3 +40,5 @@ thechosen_super_gun_emplacement:
 		LocalOffset: 0,0,0
 	Turreted:
 		Offset: 0,0,0
+		InitialFacing: -500
+		RealignDelay: -1

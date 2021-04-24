@@ -15,6 +15,23 @@ thechosen_machine_gunner:
 		Weapon: light_machine_gun
 		LocalOffset: 0,0,0
 
+thechosen_mortar:
+	Inherits@1: ^CoreInfantry
+	Inherits@2: ^CoreArmed
+	Inherits@3: ^TheChosen
+	Tooltip:
+		Name: Mortar unit
+	Health:
+		HP: 5000
+	Mobile:
+		Speed: 75
+	Buildable:
+		BuildDuration: 350
+		Description: Mortar unit
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0
+
 thechosen_commander:
 	Inherits@1: ^CoreInfantry
 	Inherits@2: ^CoreArmed

@@ -36,8 +36,8 @@ thechosen_slaven:
 		Facings: -8
 		Tick: 60
 		Offset: -55, -42
-	shadow-overlay: GFX|TROOPSH.BIM
-		Offset: -8, -2
+	shadow-overlay: GFX|MECHSHAD.BIM
+		Offset: -24, -8
 		ZOffset: -1000
 	icon: GFX|ICONST1.BIM
 		Start: 7

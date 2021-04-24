@@ -7,7 +7,7 @@ thechosen_mobilebase:
 		HP: 5000
 	Mobile:
 		TurnSpeed: 80
-		Speed: 120
+		Speed: 75
 	WithShadow:
 		Offset: 75, 25, 0
 		ZOffset: -600
@@ -30,3 +30,7 @@ thechosen_slaven:
 	Armament:
 		Weapon: light_machine_gun
 		LocalOffset: 0,0,0
+	WithIdleOverlay:
+		Sequence: shadow-overlay
+		Palette: shadow
+		IsDecoration: true

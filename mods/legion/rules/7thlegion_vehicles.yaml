@@ -7,7 +7,7 @@
 		HP: 5000
 	Mobile:
 		TurnSpeed: 80
-		Speed: 120
+		Speed: 75
 
 7thlegion_slaven:
 	Inherits@1: ^CoreVehicle
@@ -25,3 +25,51 @@
 	Armament:
 		Weapon: light_machine_gun
 		LocalOffset: 0,0,0
+	WithIdleOverlay:
+		Sequence: shadow-overlay
+		Palette: shadow
+		IsDecoration: true
+
+7thlegion_light_mech:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^7thLegion
+	Inherits@3: ^CoreTurret
+	Tooltip:
+		Name: Inquisitor
+	Health:
+		HP: 5000
+	Mobile:
+		TurnSpeed: 80
+		Speed: 90
+	Buildable:
+		BuildDuration: 350
+		Description: Inquisitor
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0
+	WithIdleOverlay:
+		Sequence: shadow-overlay
+		Palette: shadow
+		IsDecoration: true
+
+7thlegion_heavy_mech:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^7thLegion
+	Inherits@3: ^CoreTurret
+	Tooltip:
+		Name: Revelator
+	Health:
+		HP: 5000
+	Mobile:
+		TurnSpeed: 80
+		Speed: 90
+	Buildable:
+		BuildDuration: 350
+		Description: Revelator
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0
+	WithIdleOverlay:
+		Sequence: shadow-overlay
+		Palette: shadow
+		IsDecoration: true
