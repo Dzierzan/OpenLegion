@@ -522,3 +522,27 @@ Actors:
 		Owner: Multi0
 		Facing: 384
 		Location: 42,68
+	Actor112: 7thlegion_purifier
+		Owner: Multi0
+		Facing: 384
+		Location: 42,74
+	Actor113: 7thlegion_purifier
+		Owner: Multi0
+		Facing: 384
+		Location: 40,74
+	Actor114: 7thlegion_purifier
+		Owner: Multi0
+		Facing: 384
+		Location: 38,74
+	Actor115: 7thlegion_faith_hammer
+		Owner: Multi0
+		Facing: 384
+		Location: 38,76
+	Actor116: 7thlegion_faith_hammer
+		Owner: Multi0
+		Facing: 384
+		Location: 40,76
+	Actor117: 7thlegion_faith_hammer
+		Owner: Multi0
+		Facing: 384
+		Location: 42,76

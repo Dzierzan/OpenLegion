@@ -18,5 +18,8 @@
 		Weapon: light_machine_gun
 		LocalOffset: 0,0,0
 	Turreted:
+		TurnSpeed: 70
 		Offset: 0,0,0
+		InitialFacing: -500
+		RealignDelay: -1
 	-WithIdleOverlay:

@@ -6,7 +6,7 @@
 	Health:
 		HP: 5000
 	Mobile:
-		TurnSpeed: 80
+		TurnSpeed: 70
 		Speed: 75
 
 7thlegion_slaven:
@@ -30,6 +30,56 @@
 		Palette: shadow
 		IsDecoration: true
 
+7thlegion_faith_hammer:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^7thLegion
+	Inherits@3: ^CoreTurret
+	Tooltip:
+		Name: Faith Hammer
+	Health:
+		HP: 5000
+	Mobile:
+		TurnSpeed: 70
+		Speed: 80
+	Buildable:
+		BuildDuration: 350
+		Description: Faith Hammer
+	Armament:
+		Weapon: light_machine_gun
+		Recoil: 125
+		RecoilRecovery: 38
+		LocalOffset: 0,0,0
+	Turreted:
+		TurnSpeed: 70
+	WithShadow:
+		Offset: 75, 100, 0
+		ZOffset: -600
+
+7thlegion_purifier:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^7thLegion
+	Inherits@3: ^CoreTurret
+	Tooltip:
+		Name: Purifier
+	Health:
+		HP: 5000
+	Mobile:
+		TurnSpeed: 70
+		Speed: 80
+	Buildable:
+		BuildDuration: 350
+		Description: Purifier
+	Armament:
+		Weapon: light_machine_gun
+		Recoil: 125
+		RecoilRecovery: 38
+		LocalOffset: 0,0,0
+	Turreted:
+		TurnSpeed: 70
+	WithShadow:
+		Offset: 75, 100, 0
+		ZOffset: -600
+
 7thlegion_light_mech:
 	Inherits@1: ^CoreVehicle
 	Inherits@2: ^7thLegion
@@ -39,14 +89,16 @@
 	Health:
 		HP: 5000
 	Mobile:
-		TurnSpeed: 80
-		Speed: 90
+		TurnSpeed: 70
+		Speed: 80
 	Buildable:
 		BuildDuration: 350
 		Description: Inquisitor
 	Armament:
 		Weapon: light_machine_gun
 		LocalOffset: 0,0,0
+	Turreted:
+		TurnSpeed: 70
 	WithIdleOverlay:
 		Sequence: shadow-overlay
 		Palette: shadow
@@ -61,14 +113,16 @@
 	Health:
 		HP: 5000
 	Mobile:
-		TurnSpeed: 80
-		Speed: 90
+		TurnSpeed: 70
+		Speed: 80
 	Buildable:
 		BuildDuration: 350
 		Description: Revelator
 	Armament:
 		Weapon: light_machine_gun
 		LocalOffset: 0,0,0
+	Turreted:
+		TurnSpeed: 70
 	WithIdleOverlay:
 		Sequence: shadow-overlay
 		Palette: shadow
