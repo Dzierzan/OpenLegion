@@ -546,3 +546,27 @@ Actors:
 		Owner: Multi0
 		Facing: 384
 		Location: 42,76
+	Actor118: thechosen_light_mech
+		Owner: Multi0
+		Facing: 384
+		Location: 84,72
+	Actor119: thechosen_light_mech
+		Owner: Multi0
+		Facing: 384
+		Location: 86,72
+	Actor120: thechosen_light_mech
+		Owner: Multi0
+		Facing: 384
+		Location: 88,72
+	Actor121: thechosen_heavy_mech
+		Owner: Multi0
+		Facing: 384
+		Location: 84,74
+	Actor122: thechosen_heavy_mech
+		Owner: Multi0
+		Facing: 384
+		Location: 86,74
+	Actor123: thechosen_heavy_mech
+		Owner: Multi0
+		Facing: 384
+		Location: 88,74
