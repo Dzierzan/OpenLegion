@@ -570,3 +570,15 @@ Actors:
 		Owner: Multi0
 		Facing: 384
 		Location: 88,74
+	Actor124: thechosen_avenger
+		Owner: Multi0
+		Facing: 384
+		Location: 84,76
+	Actor125: thechosen_avenger
+		Owner: Multi0
+		Facing: 384
+		Location: 86,76
+	Actor126: thechosen_avenger
+		Owner: Multi0
+		Facing: 384
+		Location: 88,76

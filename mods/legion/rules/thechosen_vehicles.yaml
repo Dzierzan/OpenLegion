@@ -35,6 +35,27 @@ thechosen_slaven:
 		Palette: shadow
 		IsDecoration: true
 
+thechosen_avenger:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^TheChosen
+	Inherits@3: ^CoreArmed
+	Tooltip:
+		Name: Avenger
+	Health:
+		HP: 5000
+	Mobile:
+		TurnSpeed: 70
+		Speed: 80
+	Buildable:
+		BuildDuration: 350
+		Description: Avenger
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0
+	WithShadow:
+		Offset: 75, 100, 0
+		ZOffset: -600
+
 thechosen_light_mech:
 	Inherits@1: ^CoreVehicle
 	Inherits@2: ^TheChosen
