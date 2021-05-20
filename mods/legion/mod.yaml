@@ -28,6 +28,7 @@ Rules:
 	legion|rules/thechosen_vehicles.yaml
 	legion|rules/thechosen_defenses.yaml
 	legion|rules/thechosen.yaml
+	legion|rules/common.yaml
 
 Sequences:
 	legion|sequences/editor-overlay.yaml
@@ -42,6 +43,7 @@ Sequences:
 	legion|sequences/explosions.yaml
 	legion|sequences/misc.yaml
 	legion|sequences/weapons.yaml
+	legion|sequences/common.yaml
 
 Weapons:
 	legion|weapons/buildings.yaml

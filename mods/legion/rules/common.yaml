@@ -1,0 +1,42 @@
+carrier:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^TheChosen
+	Tooltip:
+		Name: Carrier
+	Health:
+		HP: 48000
+	Valued:
+		Cost: 1100
+	Buildable:
+		BuildDuration: 750
+		BuildDurationModifier: 100
+		Description: Large winged, planet-bound ship\n  Automatically lifts harvesters from and to Ore.\n  Lifts vehicles to Repair Pads when ordered.
+	UpdatesPlayerStatistics:
+		AddToAssetsValue: false
+	Aircraft:
+		CruiseAltitude: 2160
+		CruisingCondition: cruising
+		Speed: 144
+		TurnSpeed: 16
+		#LandableTerrainTypes: TODO
+		Repulsable: False
+		AirborneCondition: airborne
+		CanSlide: True
+		VTOL: true
+		IdleTurnSpeed: 4
+	Targetable@GROUND:
+		TargetTypes: Ground, Vehicle
+		RequiresCondition: !airborne
+	Targetable@AIRBORNE:
+		TargetTypes: Air
+		RequiresCondition: airborne
+	Carryall:
+		BeforeLoadDelay: 10
+		BeforeUnloadDelay: 15
+		LocalOffset: 0, 0, -128	
+	WithShadow:
+		Offset: 75, 100, 0
+		ZOffset: 600
+	-Mobile:
+	MapEditorData:
+		Categories: Common

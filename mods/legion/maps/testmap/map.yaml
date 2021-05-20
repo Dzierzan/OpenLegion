@@ -582,3 +582,15 @@ Actors:
 		Owner: Multi0
 		Facing: 384
 		Location: 88,76
+	Actor127: carrier
+		Owner: Multi0
+		Facing: 384
+		Location: 62,90
+	Actor128: carrier
+		Owner: Multi0
+		Facing: 384
+		Location: 64,90
+	Actor129: carrier
+		Owner: Multi0
+		Facing: 384
+		Location: 66,90
