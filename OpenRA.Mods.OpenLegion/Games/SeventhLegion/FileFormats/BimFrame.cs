@@ -13,46 +13,53 @@ namespace OpenRA.Mods.OpenLegion.Games.SeventhLegion.FileFormats
         public BimFrame(Stream s)
         {
             var pixelsOffset = s.ReadInt16();
-            Height = s.ReadInt16();
+            var dataHeight = s.ReadInt16();
+            Height = dataHeight % 2 == 0 ? dataHeight : dataHeight + 1;
 
-            if (s.Length == s.Position + pixelsOffset * Height)
+            if (s.Length == s.Position + pixelsOffset * dataHeight)
             {
-                Width = pixelsOffset;
-                Pixels = s.ReadBytes(Width * Height);
-                return;
+                var dataWidth = pixelsOffset;
+                Width = dataWidth % 2 == 0 ? dataWidth : dataWidth + 1;
+                Pixels = new byte[Width * Height];
+
+                for (var i = 0; i < dataHeight; i++)
+                    Array.Copy(s.ReadBytes(dataWidth), 0, Pixels, i * Width, dataWidth);
             }
-
-            s.Position = pixelsOffset;
-            var compressed = s.ReadBytes((int)(s.Length - s.Position));
-            var readOffset = 0;
-            s.Position = 4;
-
-            var rows = new byte[Height][];
-
-            for (var i = 0; i < Height; i++)
+            else
             {
-                var numChunks = s.ReadInt16();
-                var row = Array.Empty<byte>();
+                s.Position = pixelsOffset;
+                var compressed = s.ReadBytes((int)(s.Length - s.Position));
+                var readOffset = 0;
+                s.Position = 4;
 
-                for (var j = 0; j < numChunks; j++)
+                var rows = new byte[dataHeight][];
+
+                for (var i = 0; i < dataHeight; i++)
                 {
-                    var offset = s.ReadInt16();
-                    var copy = s.ReadInt16();
+                    var numChunks = s.ReadInt16();
+                    var row = Array.Empty<byte>();
 
-                    Array.Resize(ref row, Math.Max(row.Length, offset + copy));
-                    Array.Copy(compressed, readOffset, row, offset, copy);
+                    for (var j = 0; j < numChunks; j++)
+                    {
+                        var offset = s.ReadInt16();
+                        var copy = s.ReadInt16();
 
-                    readOffset += copy;
+                        Array.Resize(ref row, Math.Max(row.Length, offset + copy));
+                        Array.Copy(compressed, readOffset, row, offset, copy);
+
+                        readOffset += copy;
+                    }
+
+                    rows[i] = row;
                 }
 
-                rows[i] = row;
+                var dataWidth = rows.Max(row => row.Length);
+                Width = dataWidth % 2 == 0 ? dataWidth : dataWidth + 1;
+                Pixels = new byte[Width * Height];
+
+                for (var i = 0; i < rows.Length; i++)
+                    Array.Copy(rows[i], 0, Pixels, i * Width, rows[i].Length);
             }
-
-            Width = rows.Max(row => row.Length);
-            Pixels = new byte[Width * Height];
-
-            for (var i = 0; i < rows.Length; i++)
-                Array.Copy(rows[i], 0, Pixels, i * Width, rows[i].Length);
         }
     }
 }
