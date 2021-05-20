@@ -40,3 +40,47 @@ carrier:
 	-Mobile:
 	MapEditorData:
 		Categories: Common
+
+harvester:
+	Inherits@1: ^CoreVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 110
+		Prerequisites: proc, ~techlevel.infonly #TODO Update that
+		Description: Collects Ore for processing.\n  Unarmed
+	Valued:
+		Cost: 1100
+	Tooltip:
+		Name: Ore Truck
+		GenericName: Harvester
+	Health:
+		HP: 60000
+	Mobile:
+		TurnSpeed: 70
+		Speed: 85
+	#Harvester:
+	#	Capacity: 20
+	#	Resources: Ore,Gems
+	#	BaleUnloadDelay: 1
+	#	SearchFromProcRadius: 15
+	#	SearchFromHarvesterRadius: 8
+	#	HarvestFacings: 8
+	#	EmptyCondition: no-ore
+	ChangesHealth:
+		Step: 100
+		Delay: 25
+		StartIfBelow: 50
+		DamageCooldown: 500
+	#WithHarvesterPipsDecoration:
+	#	Position: BottomLeft
+	#	Margin: 4, 3
+	#	RequiresSelection: true
+	#	PipCount: 7
+	#	ResourceSequences:
+	#		Ore: pip-yellow
+	#		Gems: pip-red
+	WithShadow:
+		Offset: 75, 100, 0
+		ZOffset: -600
+	RenderSprites:
+		PlayerPalette: harvester

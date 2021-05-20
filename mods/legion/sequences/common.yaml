@@ -9,3 +9,13 @@ carrier:
 		Offset: -25, -15
 	icon: GFX|ICONST.BIM
 		Start: 0
+
+harvester:
+	idle: bits/harvester.png
+		Facings: -32
+		Offset: 0,0
+	move: bits/harvester.png
+		Facings: -32
+		Offset: 0,0
+	icon: GFX|ICONST.BIM
+		Start: 0

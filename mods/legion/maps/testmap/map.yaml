@@ -594,3 +594,15 @@ Actors:
 		Owner: Multi0
 		Facing: 384
 		Location: 66,90
+	Actor130: harvester
+		Owner: Multi0
+		Facing: 384
+		Location: 62,92
+	Actor131: harvester
+		Owner: Multi0
+		Facing: 384
+		Location: 64,92
+	Actor132: harvester
+		Owner: Multi0
+		Facing: 384
+		Location: 66,92
