@@ -618,3 +618,15 @@ Actors:
 		Owner: Multi0
 		Facing: 384
 		Location: 88,78
+	Actor136: thechosen_oppressor
+		Owner: Multi0
+		Facing: 384
+		Location: 84,80
+	Actor137: thechosen_oppressor
+		Owner: Multi0
+		Facing: 384
+		Location: 86,80
+	Actor138: thechosen_oppressor
+		Owner: Multi0
+		Facing: 384
+		Location: 88,80
