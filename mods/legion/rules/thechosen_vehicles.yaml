@@ -98,15 +98,17 @@ thechosen_oppressor:
 		BuildDuration: 350
 		Description: Oppressor
 	Armament:
-		Weapon: light_machine_gun
+		Weapon: tank
 		Recoil: 125
 		RecoilRecovery: 38
-		LocalOffset: 0,0,0
+		MuzzleSequence: muzzle
+		LocalOffset: 850,0,350
 	Turreted:
 		TurnSpeed: 70
 	WithShadow:
 		Offset: 75, 100, 0
 		ZOffset: -600
+	WithMuzzleOverlay:
 	RenderSprites:
 		PlayerPalette: thechosentank
 

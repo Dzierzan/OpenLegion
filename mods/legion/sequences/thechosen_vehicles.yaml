@@ -83,6 +83,11 @@ thechosen_oppressor:
 		Frames: 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42
 		Facings: -32
 		Offset: -31, -34
+	muzzle: GFX|TANKFIRE.BIM
+		Frames: 2, 0, 1
+		Length: 3
+		Tick: 40
+		Offset: -5, -5
 	icon: GFX|ICONST1.BIM
 		Start: 16
 

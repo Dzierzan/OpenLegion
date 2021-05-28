@@ -1,0 +1,24 @@
+tank:
+	ValidTargets: Ground
+	Range: 9c0
+	ReloadDelay: 25
+	Report: SFX|Tfsm.wav
+	Projectile: Bullet
+		Speed: 350
+		Blockable: false
+		Inaccuracy: 100
+		Image: projectiles
+		Sequences: shell
+	Warhead@Damage: SpreadDamage
+		Damage: 500
+		Spread: 126
+		ValidTargets: Ground
+	Warhead@Effect: CreateEffect
+		Image: explosions
+		Explosions: small_explosion
+		ValidTargets: Ground
+		ImpactSounds: SFX|Tflg.wav
+	Warhead@ThrowParticles: SpawnActor
+		Actors: spawn_particles
+		ValidTargets: Ground
+		TerrainTypes: Clear
