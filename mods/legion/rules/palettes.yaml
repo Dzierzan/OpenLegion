@@ -58,6 +58,10 @@
 		BasePalette: palette
 		BaseName: thechosenpriest
 		RemapIndex: 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+	OverlayPlayerColorPalette@the-chosen-marauder:
+		BasePalette: palette
+		BaseName: marauder
+		RemapIndex: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 29, 30, 31
 	OverlayPlayerColorPalette@harvester:
 		BasePalette: palette
 		BaseName: harvester

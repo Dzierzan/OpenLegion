@@ -606,3 +606,15 @@ Actors:
 		Owner: Multi0
 		Facing: 384
 		Location: 66,92
+	Actor133: thechosen_marauder
+		Owner: Multi0
+		Facing: 384
+		Location: 84,78
+	Actor134: thechosen_marauder
+		Owner: Multi0
+		Facing: 384
+		Location: 86,78
+	Actor135: thechosen_marauder
+		Owner: Multi0
+		Facing: 384
+		Location: 88,78
