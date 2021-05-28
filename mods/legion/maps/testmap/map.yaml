@@ -642,3 +642,15 @@ Actors:
 		Owner: Multi0
 		Location: 88,82
 		Facing: 384
+	Actor142: thechosen_reaper
+		Owner: Multi0
+		Facing: 384
+		Location: 84,84
+	Actor143: thechosen_reaper
+		Owner: Multi0
+		Facing: 384
+		Location: 86,84
+	Actor144: thechosen_reaper
+		Owner: Multi0
+		Facing: 384
+		Location: 88,84
