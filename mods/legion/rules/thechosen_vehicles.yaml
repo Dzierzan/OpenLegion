@@ -110,6 +110,34 @@ thechosen_oppressor:
 	RenderSprites:
 		PlayerPalette: thechosentank
 
+thechosen_annihilator:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^TheChosen
+	Inherits@3: ^CoreTurret
+	Tooltip:
+		Name: Annihilator
+	Health:
+		HP: 5000
+	Mobile:
+		TurnSpeed: 70
+		Speed: 80
+	Buildable:
+		BuildDuration: 350
+		Description: Annihilator
+	Armament:
+		Weapon: light_machine_gun
+		Recoil: 125
+		RecoilRecovery: 38
+		LocalOffset: 0,0,0
+	Turreted:
+		TurnSpeed: 70
+	WithShadow:
+		Offset: 75, 100, 0
+		ZOffset: -600
+	RenderSprites:
+		PlayerPalette: thechosentank
+
+
 thechosen_light_mech:
 	Inherits@1: ^CoreVehicle
 	Inherits@2: ^TheChosen

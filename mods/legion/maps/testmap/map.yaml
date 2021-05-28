@@ -630,3 +630,15 @@ Actors:
 		Owner: Multi0
 		Facing: 384
 		Location: 88,80
+	Actor139: thechosen_annihilator
+		Owner: Multi0
+		Location: 84,82
+		Facing: 384
+	Actor140: thechosen_annihilator
+		Owner: Multi0
+		Location: 86,82
+		Facing: 384
+	Actor141: thechosen_annihilator
+		Owner: Multi0
+		Location: 88,82
+		Facing: 384
