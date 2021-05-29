@@ -16,22 +16,32 @@ Cursors:
 		attack:
 			Start: 0
 			Length: 15
+			X: 34
+			Y: 21
 	GFX|PTRATTA.BIM: cursor
 		attackoutsiderange:
 			Start: 0
 			Length: 15
+			X: 34
+			Y: 21
 	GFX|PTRATTA.BIM: cursor
 		attackmove:
 			Start: 0
 			Length: 15
+			X: 34
+			Y: 21
 	GFX|PTRATTA.BIM: cursor
 		attackmove-blocked:
 			Start: 0
 			Length: 15
+			X: 34
+			Y: 21
 	GFX|PTRATTA.BIM: cursor
 		assaultmove:
 			Start: 0
 			Length: 15
+			X: 34
+			Y: 21
 	GFX|PTRATTA.BIM: cursor
 		assaultmove-blocked:
 			Start: 0
@@ -40,23 +50,33 @@ Cursors:
 		attack-minimap:
 			Start: 0
 			Length: 15
+			X: 34
+			Y: 21
 	GFX|PTRATTA.BIM: cursor
 		attackoutsiderange-minimap:
 			Start: 0
 			Length: 15
+			X: 34
+			Y: 21
 
 	GFX|PTRMOVE.BIM: cursor
 		move:
 			Start: 0
 			Length: 15
+			X: 21
+			Y: 21
 	GFX|PTRMOVE.BIM: cursor
 		move-minimap:
 			Start: 0
 			Length: 15
+			X: 21
+			Y: 21
 	GFX|PTRMOVE.BIM: cursor
 		move-blocked:
 			Start: 0
 			Length: 15
+			X: 21
+			Y: 21
 
 	GFX|PTRSELE.BIM: cursor
 		scroll-t:
