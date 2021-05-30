@@ -23,3 +23,33 @@
 		InitialFacing: -500
 		RealignDelay: -1
 	-WithIdleOverlay:
+
+7thlegion_super_gun_emplacement:
+	Inherits@1: ^CoreTower
+	Inherits@3: ^7thLegion
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Super Gun Emplacement
+	Building:
+		Footprint: == xx
+		Dimensions: 2,2
+	HitShape:
+		Type: Rectangle
+			TopLeft: -725, 0
+			BottomRight: 725, 1024
+		TargetableOffsets: -725,0,0
+	Health:
+		HP: 10000
+	RevealsShroud:
+		Range: 4c0
+	Targetable:
+		TargetTypes: Ground, Structure
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0
+	Turreted:
+		TurnSpeed: 70
+		Offset: 0,0,0
+		InitialFacing: -500
+		RealignDelay: -1
