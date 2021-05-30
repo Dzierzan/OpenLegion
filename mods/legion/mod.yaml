@@ -6,11 +6,13 @@ Packages:
 	^EngineDir
 	$legion: legion
 	^EngineDir|mods/common: common
+	~^SupportDir|Content/legion/Sounds: SFX #TO BE REMOVED
 	legion|bits/sounds
 	legion|uibits
 
 MapFolders:
 	legion|maps: System
+	~^SupportDir|maps/legion/{DEV_VERSION}: User
 
 Rules:
 	legion|rules/misc.yaml
