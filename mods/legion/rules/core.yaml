@@ -60,6 +60,7 @@
 	AppearsOnRadar:
 	# Allow units to use the AttackMove and AssaultMove commands.
 	AttackMove:
+		Voice: Action
 	# Use their center position instead of their footprint for fog hiding logic.
 	HiddenUnderFog:
 		Type: CenterPosition
@@ -79,6 +80,9 @@
 	UpdatesPlayerStatistics:
 	# Health bar.
 	SelectionDecorations:
+	# Unit have attack sounds.
+	AttackSounds:
+		Sounds: Attack
 
 # Base for all buildings, towers and walls.
 ^CoreConstruction:
@@ -233,6 +237,8 @@
 		IsDecoration: true
 	# Infantry has death animation.
 	WithDeathAnimation:
+	# Infantry has death sounds.	
+	DeathSounds:
 
 # Base for all vehicles
 ^CoreVehicle:
@@ -273,7 +279,7 @@
 	Turreted:
 	# If it has a turret, it should attack with its turret only, meaning it can aim and fire with it while moving.
 	AttackTurreted:
-		Voice:
+		Voice: Attack
 	# Renders a turret sprite
 	WithSpriteTurret:
 	# Auto target enemies nearby.

@@ -34,6 +34,10 @@ thechosen_slaven:
 		Sequence: shadow-overlay
 		Palette: shadow
 		IsDecoration: true
+	Voiced:
+		VoiceSet: SlavenVoice
+	WithDeathAnimation:
+	DeathSounds:
 
 thechosen_avenger:
 	Inherits@1: ^CoreVehicle

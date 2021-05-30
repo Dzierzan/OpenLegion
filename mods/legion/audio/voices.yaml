@@ -2,6 +2,18 @@ UnitVoice:
 	DefaultVariant:
 	Voices:
 		Select: SFX|Proc.wav, SFX|Ur.wav, SFX|Ur2.wav
+		Move: SFX|Moveitou.wav, SFX|Onmyway.wav
 		Action: SFX|Moveitou.wav, SFX|Onmyway.wav
 		Attack: SFX|Ptete.wav
+		Create: SFX|Ur.wav, SFX|Ur2.wav
 		Die: SFX|Ts.wav, SFX|Ts2.wav
+
+SlavenVoice:
+	DefaultVariant:
+	Voices:
+		Select: SFX|Sld.wav
+		Move: SFX|MONOK.wav, SFX|MONGR.wav
+		Action: SFX|MONOK.wav, SFX|MONGR.wav
+		Attack: SFX|MONOK.wav, SFX|MONGR.wav
+		Create: SFX|Ur.wav, SFX|Ur2.wav
+		Die: SFX|MONSC.wav, SFX|srred.wav

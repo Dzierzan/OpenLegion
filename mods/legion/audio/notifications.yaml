@@ -12,8 +12,8 @@ Speech:
 Sounds:
 	DefaultVariant:
 	Notifications:
-		ChatLine: click.wav
-		ClickSound: click.wav
+		ChatLine: Opclick.wav
+		ClickSound: Opclick.wav
 		Beacon:
 		TabClick:
 		ClickDisabledSound:
