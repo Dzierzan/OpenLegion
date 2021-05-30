@@ -83,6 +83,9 @@
 	# Unit have attack sounds.
 	AttackSounds:
 		Sounds: Attack
+	# This actor will reveal the shroud.
+	RevealsShroud:
+		Range: 8c0
 
 # Base for all buildings, towers and walls.
 ^CoreConstruction:
@@ -219,9 +222,6 @@
 		FacingTolerance: 5
 	# This trait needs to be disabled as it won't work with WithInfantryBody.
 	-WithFacingSpriteBody:
-	# This actor will reveal the shroud.
-	RevealsShroud:
-		Range: 10c0
 	# Random idle turning
 	TurnOnIdle:
 		MinDelay: 100

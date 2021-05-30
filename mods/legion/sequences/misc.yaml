@@ -14,7 +14,15 @@ particle:
 		ZOffset: 500
 
 spawn_particles:
-  idle: bits/blank.png
-    Length: 16
-    Tick: 40
-    ZOffset: 500  
+	idle: bits/blank.png
+		ZOffset: 500
+
+shroud:
+	shroud: bits/shroud.png
+		Length: 16
+	fog: bits/shroud.png
+		Length: 16
+	shroudfull: bits/shroud.png
+		Start: 1
+	fogfull: bits/shroud.png
+		Start: 1

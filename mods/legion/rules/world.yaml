@@ -12,6 +12,9 @@
 		InternalName: Random
 		Side: Random
 		RandomFactionMembers: 7thlegion, thechosen
+	ShroudRenderer:
+		ShroudPalette: palette
+		Index: 0, 15, 3, 6, 12, 9, 11, 7, 14, 13, 1, 2, 4, 8, 5, 10
 
 world:
 	Inherits: ^CoreWorld
