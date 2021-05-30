@@ -260,7 +260,11 @@
 	# Group all vehicles in the map editor.
 	MapEditorData:
 		Categories: Vehicle
-	# Autotargetting actors
+	# Actors throws debris when it's killed.
+	ThrowsShrapnel:
+		Weapons: unit_debris
+		Pieces: 3, 5
+		Range: 1c0, 2c0
 
 ^CoreWorld:
 	Locomotor@Infantry:
