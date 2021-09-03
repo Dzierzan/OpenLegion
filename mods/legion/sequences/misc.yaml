@@ -30,21 +30,21 @@ shroud:
 unit_debris:
 	unit_debris1: GFX|UNITFR1.BIM
 		Length: 32
-		Tick: 60
+		Tick: 40
 		ZOffset: 2500
 	unit_debris2: GFX|UNITFR2.BIM
 		Length: 32
-		Tick: 60
+		Tick: 40
 		ZOffset: 2500
 	unit_debris3: GFX|UNITFR3.BIM
 		Length: 32
-		Tick: 60
+		Tick: 40
 		ZOffset: 2500
 	unit_debris4: GFX|UNITFR4.BIM
 		Length: 32
-		Tick: 60
+		Tick: 40
 		ZOffset: 2500
 	unit_debris5: GFX|UNITFR5.BIM
 		Length: 32
-		Tick: 60
+		Tick: 40
 		ZOffset: 2500

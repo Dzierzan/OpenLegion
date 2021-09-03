@@ -14,7 +14,7 @@ unit_debris:
 	ReloadDelay: 60
 	Range: 2c768
 	Projectile: Bullet
-		Speed: 64, 128
+		Speed: 80, 128
 		Blockable: false
 		LaunchAngle: 150, 200
 		Inaccuracy: 1c256
