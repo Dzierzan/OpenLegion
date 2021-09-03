@@ -46,7 +46,7 @@ harvester:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 110
-		Prerequisites: proc, ~techlevel.infonly #TODO Update that
+		#Prerequisites: proc, ~techlevel.infonly #TODO Update that
 		Description: Collects Ore for processing.\n  Unarmed
 	Valued:
 		Cost: 1100

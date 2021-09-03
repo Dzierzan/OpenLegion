@@ -217,3 +217,49 @@ thechosen_heavy_mech:
 		Sequence: shadow-overlay
 		Palette: shadow
 		IsDecoration: true
+
+thechosen_pyroclast:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^TheChosen
+	Tooltip:
+		Name: Pyroclast
+	Health:
+		HP: 5000
+	Mobile:
+		TurnSpeed: 70
+		Speed: 80
+	Buildable:
+		BuildDuration: 350
+		Description: Pyroclast
+	AttackFrontal:
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0
+	WithIdleOverlay:
+		Sequence: shadow-overlay
+		Palette: shadow
+		IsDecoration: true
+
+thechosen_venom:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^TheChosen
+	Inherits@3: ^CoreTurret
+	Tooltip:
+		Name: Venom Typhoon
+	Health:
+		HP: 5000
+	Mobile:
+		TurnSpeed: 70
+		Speed: 80
+	Buildable:
+		BuildDuration: 350
+		Description: Venom Typhoon
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0
+	Turreted:
+		TurnSpeed: 70
+	WithIdleOverlay:
+		Sequence: shadow-overlay
+		Palette: shadow
+		IsDecoration: true
