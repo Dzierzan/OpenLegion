@@ -6,21 +6,25 @@ explosions:
 		ZOffset: 5000
 	big_explosion: GFX|BANG1.BIM
 		Length: 14
-		Tick: 60
+		Tick: 40
 		ZOffset: 5000
 	explosion_A: GFX|EXPL64.BIM
 		Length: 75
-		Tick: 60
+		Tick: 12
+		Offset: -30,-55
 		ZOffset: 5000
 	explosion_B: GFX|EXPLA.BIM
 		Length: 78
-		Tick: 60
+		Tick: 12
+		Offset: -20,-35
 		ZOffset: 5000
 	explosion_C: GFX|EXPLB.BIM
 		Length: 75
-		Tick: 60
+		Tick: 12
+		Offset: -20,-35
 		ZOffset: 5000
 	explosion_D: GFX|EXPLC.BIM
 		Length: 61
-		Tick: 60
+		Tick: 12
+		Offset: -20,-35
 		ZOffset: 5000

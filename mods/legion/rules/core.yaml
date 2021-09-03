@@ -154,6 +154,10 @@
 		Sequence: shadow-overlay
 		Palette: shadow
 		IsDecoration: true
+	# Construction explodes when it's dead
+	Explodes:
+		Weapon: BuildingExplode
+		EmptyWeapon: BuildingExplode
 
 # Base for all towers.
 ^CoreTower:
@@ -185,6 +189,10 @@
 		Sequence: shadow-overlay
 		Palette: shadow
 		IsDecoration: true
+	# Tower explodes when it's dead
+	Explodes:
+		Weapon: VehicleExplode
+		EmptyWeapon: VehicleExplode
 
 # Base for all infantry.
 ^CoreInfantry:
@@ -237,8 +245,10 @@
 		IsDecoration: true
 	# Infantry has death animation.
 	WithDeathAnimation:
-	# Infantry has death sounds.	
-	DeathSounds:
+	# Infantry bleeds upon death
+	Explodes:
+		Weapon: InfantryDie
+		EmptyWeapon: InfantryDie
 
 # Base for all vehicles
 ^CoreVehicle:
@@ -254,9 +264,9 @@
 	# Vehicles have an animation while moving.
 	WithMoveAnimation:
 	# Destroying a vehicle always causes an explosion.
-	#Explodes: todo
-	#	Weapon: dieVehicle
-	#	EmptyWeapon: dieVehicle
+	Explodes:
+		Weapon: VehicleExplode
+		EmptyWeapon: VehicleExplode
 	# Group all vehicles in the map editor.
 	MapEditorData:
 		Categories: Vehicle

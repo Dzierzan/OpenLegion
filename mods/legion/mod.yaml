@@ -52,6 +52,7 @@ Weapons:
 	legion|weapons/infantry.yaml
 	legion|weapons/vehicles.yaml
 	legion|weapons/misc.yaml
+	legion|weapons/explosions.yaml
 
 TileSets:
 	legion|tilesets/desert.yaml

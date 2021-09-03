@@ -48,3 +48,10 @@ unit_debris:
 		Length: 32
 		Tick: 40
 		ZOffset: 2500
+
+blood:
+	idle: GFX|BLOOD.BIM
+		Length: 11
+		Tick: 40
+		Offset: -20,-20
+		ZOffset: 500

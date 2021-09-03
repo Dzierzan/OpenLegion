@@ -1,0 +1,22 @@
+VehicleExplode:
+	ValidTargets: Ground
+	Warhead@Effect: CreateEffect
+		Explosions: explosion_C
+		Image: explosions
+		ValidTargets: Ground
+		ImpactSounds: SFX|unitex.wav
+
+BuildingExplode:
+	ValidTargets: Ground
+	Warhead@Effect: CreateEffect
+		Explosions: explosion_A
+		Image: explosions
+		ValidTargets: Ground
+		ImpactSounds: SFX|Builex.wav
+
+InfantryDie:
+	ValidTargets: Ground
+	Warhead@Effect: CreateEffect
+		Explosions: idle
+		Image: blood
+		ValidTargets: Ground
