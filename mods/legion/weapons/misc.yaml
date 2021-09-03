@@ -12,15 +12,34 @@ particle:
 
 unit_debris:
 	ReloadDelay: 60
-	Range: 2c768
+	Range: 1c0
 	Projectile: Bullet
-		Speed: 80, 128
+		Speed: 75,130
 		Blockable: false
-		LaunchAngle: 150, 200
-		Inaccuracy: 1c256
+		LaunchAngle: 80, 160
+		Inaccuracy: 2c0
+		BounceCount: 1
+		BounceRangeModifier: 40
 		Image: unit_debris
 		Palette: 7thlegion
 		IsPlayerPalette: True
 		Sequences: unit_debris1, unit_debris2, unit_debris3, unit_debris4, unit_debris5
+		#Shadow: True #TODO Crashes because it cannot find 7thlegion palette.
+		#ShadowPalette: shadow
+
+debris:
+	ReloadDelay: 60
+	Range: 1c0
+	Projectile: Bullet
+		Speed: 75,130
+		Blockable: false
+		LaunchAngle: 80, 160
+		Inaccuracy: 2c0
+		BounceCount: 1
+		BounceRangeModifier: 40
+		Image: debris
+		Palette: 7thlegion
+		IsPlayerPalette: True
+		Sequences: debris1, debris2, debris3, debris4, debris5, debris6, debris7, debris8
 		#Shadow: True #TODO Crashes because it cannot find 7thlegion palette.
 		#ShadowPalette: shadow

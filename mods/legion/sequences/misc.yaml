@@ -30,23 +30,57 @@ shroud:
 unit_debris:
 	unit_debris1: GFX|UNITFR1.BIM
 		Length: 32
-		Tick: 40
+		Tick: 30
 		ZOffset: 2500
 	unit_debris2: GFX|UNITFR2.BIM
 		Length: 32
-		Tick: 40
+		Tick: 30
 		ZOffset: 2500
 	unit_debris3: GFX|UNITFR3.BIM
 		Length: 32
-		Tick: 40
+		Tick: 30
 		ZOffset: 2500
 	unit_debris4: GFX|UNITFR4.BIM
 		Length: 32
-		Tick: 40
+		Tick: 30
 		ZOffset: 2500
 	unit_debris5: GFX|UNITFR5.BIM
 		Length: 32
-		Tick: 40
+		Tick: 30
+		ZOffset: 2500
+
+debris:
+	debris1: GFX|FRAG1.BIM
+		Length: 15
+		Tick: 50
+		ZOffset: 2500
+	debris2: GFX|FRAG1A.BIM
+		Length: 15
+		Tick: 50
+		ZOffset: 2500
+	debris3: GFX|FRAG2.BIM
+		Length: 15
+		Tick: 50
+		ZOffset: 2500
+	debris4: GFX|FRAG2A.BIM
+		Length: 15
+		Tick: 50
+		ZOffset: 2500
+	debris5: GFX|FRAG3.BIM
+		Length: 15
+		Tick: 50
+		ZOffset: 2500
+	debris6: GFX|FRAG3A.BIM
+		Length: 15
+		Tick: 50
+		ZOffset: 2500
+	debris7: GFX|FRAG4.BIM
+		Length: 15
+		Tick: 50
+		ZOffset: 2500
+	debris8: GFX|FRAG4A.BIM
+		Length: 15
+		Tick: 50
 		ZOffset: 2500
 
 blood:

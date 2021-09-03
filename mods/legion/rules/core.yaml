@@ -158,6 +158,11 @@
 	Explodes:
 		Weapon: BuildingExplode
 		EmptyWeapon: BuildingExplode
+	# Actors throws debris when it's killed.
+	ThrowsShrapnel:
+		Weapons: unit_debris, debris
+		Pieces: 3, 7
+		Range: 1c512, 2c512
 
 # Base for all towers.
 ^CoreTower:
