@@ -657,3 +657,15 @@ Actors:
 	Actor145: 7thlegion_super_gun_emplacement
 		Owner: Multi0
 		Location: 51,66
+	Actor146: 7thlegion_slaven_beta
+		Owner: Multi0
+		Facing: 384
+		Location: 54,85
+	Actor147: 7thlegion_slaven_beta
+		Owner: Multi0
+		Facing: 384
+		Location: 56,85
+	Actor148: 7thlegion_slaven_beta
+		Owner: Multi0
+		Facing: 384
+		Location: 58,85

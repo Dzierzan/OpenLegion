@@ -34,6 +34,31 @@
 	WithDeathAnimation:
 	DeathSounds:
 
+7thlegion_slaven_beta:
+	Inherits@1: ^CoreVehicle
+	Inherits@2: ^CoreArmed
+	Inherits@3: ^7thLegion
+	Tooltip:
+		Name: Slaven (beta)
+	Health:
+		HP: 5000
+	Mobile:
+		Speed: 125
+	Buildable:
+		BuildDuration: 350
+		Description: Slaven (beta)
+	Armament:
+		Weapon: light_machine_gun
+		LocalOffset: 0,0,0
+	WithIdleOverlay:
+		Sequence: shadow-overlay
+		Palette: shadow
+		IsDecoration: true
+	Voiced:
+		VoiceSet: SlavenVoice
+	WithDeathAnimation:
+	DeathSounds:
+
 7thlegion_faith_hammer:
 	Inherits@1: ^CoreVehicle
 	Inherits@2: ^7thLegion
